@@ -8,5 +8,5 @@ function App() {
     </div>
   );
 }
-// James Test #2
+// Test 2
 export default App;

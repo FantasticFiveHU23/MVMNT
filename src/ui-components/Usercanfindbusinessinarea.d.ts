@@ -1,0 +1,95 @@
+/***************************************************************************
+ * The contents of this file were generated with Amplify Studio.           *
+ * Please refrain from making any modifications to this file.              *
+ * Any changes to this file will be overwritten when running amplify pull. *
+ **************************************************************************/
+
+import * as React from "react";
+import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
+export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
+export declare type UsercanfindbusinessinareaOverridesProps = {
+    Usercanfindbusinessinarea?: PrimitiveOverrideProps<ViewProps>;
+    "3FD6D1E0-911A-432E-BBDE-051FB4C400F3 1"?: PrimitiveOverrideProps<ImageProps>;
+    Header?: PrimitiveOverrideProps<ViewProps>;
+    "Top Sellers"?: PrimitiveOverrideProps<TextProps>;
+    Categories?: PrimitiveOverrideProps<TextProps>;
+    Icon?: PrimitiveOverrideProps<TextProps>;
+    "User "?: PrimitiveOverrideProps<IconProps>;
+    "Local Finds"?: PrimitiveOverrideProps<TextProps>;
+    "expand profile"?: PrimitiveOverrideProps<IconProps>;
+    "search bar"?: PrimitiveOverrideProps<ViewProps>;
+    "search-icon"?: PrimitiveOverrideProps<ImageProps>;
+    "search-bar-div"?: PrimitiveOverrideProps<IconProps>;
+    Filter?: PrimitiveOverrideProps<TextProps>;
+    "page-div"?: PrimitiveOverrideProps<IconProps>;
+    "Business Profile 1"?: PrimitiveOverrideProps<ViewProps>;
+    "bid-profile1"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Name930"?: PrimitiveOverrideProps<TextProps>;
+    "Category | Rating | Distance931"?: PrimitiveOverrideProps<TextProps>;
+    "@businessusername933"?: PrimitiveOverrideProps<TextProps>;
+    "<----- Bio/Blurb Here ------>935"?: PrimitiveOverrideProps<TextProps>;
+    directions937?: PrimitiveOverrideProps<ImageProps>;
+    Directions938?: PrimitiveOverrideProps<TextProps>;
+    "business-icon1"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Profile 2"?: PrimitiveOverrideProps<ViewProps>;
+    "bid-profile2"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Name939"?: PrimitiveOverrideProps<TextProps>;
+    "Category | Rating | Distance940"?: PrimitiveOverrideProps<TextProps>;
+    "@businessusername941"?: PrimitiveOverrideProps<TextProps>;
+    "<----- Bio/Blurb Here ------>942"?: PrimitiveOverrideProps<TextProps>;
+    directions943?: PrimitiveOverrideProps<ImageProps>;
+    Directions944?: PrimitiveOverrideProps<TextProps>;
+    "business-icon2"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Profile 4"?: PrimitiveOverrideProps<ViewProps>;
+    "bid-profile4"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Name959"?: PrimitiveOverrideProps<TextProps>;
+    "Category | Rating | Distance960"?: PrimitiveOverrideProps<TextProps>;
+    "@businessusername961"?: PrimitiveOverrideProps<TextProps>;
+    "<----- Bio/Blurb Here ------>962"?: PrimitiveOverrideProps<TextProps>;
+    directions963?: PrimitiveOverrideProps<ImageProps>;
+    Directions964?: PrimitiveOverrideProps<TextProps>;
+    "business-icon4"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Profile 5"?: PrimitiveOverrideProps<ViewProps>;
+    "bid-profile5"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Name966"?: PrimitiveOverrideProps<TextProps>;
+    "Category | Rating | Distance967"?: PrimitiveOverrideProps<TextProps>;
+    "@businessusername968"?: PrimitiveOverrideProps<TextProps>;
+    "<----- Bio/Blurb Here ------>969"?: PrimitiveOverrideProps<TextProps>;
+    directions970?: PrimitiveOverrideProps<ImageProps>;
+    Directions971?: PrimitiveOverrideProps<TextProps>;
+    "Frame 3"?: PrimitiveOverrideProps<ViewProps>;
+    "business-icon5"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Profile 3"?: PrimitiveOverrideProps<ViewProps>;
+    "bid-profile3"?: PrimitiveOverrideProps<ViewProps>;
+    "Business Name952"?: PrimitiveOverrideProps<TextProps>;
+    "Category | Rating | Distance953"?: PrimitiveOverrideProps<TextProps>;
+    "@businessusername954"?: PrimitiveOverrideProps<TextProps>;
+    "<----- Bio/Blurb Here ------>955"?: PrimitiveOverrideProps<TextProps>;
+    directions956?: PrimitiveOverrideProps<ImageProps>;
+    Directions957?: PrimitiveOverrideProps<TextProps>;
+    "business-icon3"?: PrimitiveOverrideProps<ViewProps>;
+    "Side bar"?: PrimitiveOverrideProps<ViewProps>;
+    "Left Side Bar"?: PrimitiveOverrideProps<ViewProps>;
+    "Ellipse 2"?: PrimitiveOverrideProps<IconProps>;
+    "Ellipse 5"?: PrimitiveOverrideProps<IconProps>;
+    "Ellipse 3"?: PrimitiveOverrideProps<IconProps>;
+    "Ellipse 4"?: PrimitiveOverrideProps<IconProps>;
+    "filter results"?: PrimitiveOverrideProps<TextProps>;
+    "Open Now"?: PrimitiveOverrideProps<TextProps>;
+    "Price Range"?: PrimitiveOverrideProps<TextProps>;
+    Ratings?: PrimitiveOverrideProps<TextProps>;
+    "within 50 mi"?: PrimitiveOverrideProps<TextProps>;
+    Rating?: PrimitiveOverrideProps<ViewProps>;
+    Star25219?: PrimitiveOverrideProps<IconProps>;
+    Star25220?: PrimitiveOverrideProps<IconProps>;
+    Star25221?: PrimitiveOverrideProps<IconProps>;
+    Star25222?: PrimitiveOverrideProps<IconProps>;
+    Star25223?: PrimitiveOverrideProps<IconProps>;
+    "Scrollbar Frame"?: PrimitiveOverrideProps<ViewProps>;
+    Scrollbar?: PrimitiveOverrideProps<ViewProps>;
+} & EscapeHatchProps;
+export declare type UsercanfindbusinessinareaProps = React.PropsWithChildren<Partial<ViewProps> & {
+    overrides?: UsercanfindbusinessinareaOverridesProps | undefined | null;
+}>;
+export default function Usercanfindbusinessinarea(props: UsercanfindbusinessinareaProps): React.ReactElement;

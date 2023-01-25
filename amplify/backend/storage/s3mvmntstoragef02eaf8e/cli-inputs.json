@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3mvmntstoragef02eaf8e",
+  "bucketName": "mvmnt-storage-f02eaf8e",
+  "policyUUID": "b1db19a5",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

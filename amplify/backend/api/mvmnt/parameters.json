@@ -1,6 +1,5 @@
 {
   "AppSyncApiName": "mvmnt",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false,
-  "AuthModeLastUpdated": "2023-01-26T03:19:51.322Z"
+  "DynamoDBEnableServerSideEncryption": false
 }

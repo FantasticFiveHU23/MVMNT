@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Header.css';
 import LoginButton from "../components/LoginButton";
 import logo from "../images/logo.png";
+import ProfilePicture from "../components/ProfilePicture";
 
 class Header extends React.Component {
     render (){
@@ -12,7 +13,7 @@ class Header extends React.Component {
                 <a href="/top-sellers">Top Sellers</a>
                 <a href="/categories">Categories</a>
                 <a href="/search">Search</a>
-                <LoginButton/>
+                {this.props.isLoggedIn ? <ProfilePicture /> : <LoginButton/>}
             </nav>
         )
     }

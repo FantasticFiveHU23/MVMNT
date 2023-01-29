@@ -1,7 +1,7 @@
 import '../styles/App.css';
 import React from 'react';
 import HomePage from './HomePage';
-// import Header from '../components/Header';
+import HomePageLoggedIn from './HomePageLoggedIn';
 
 function App() {
   return (

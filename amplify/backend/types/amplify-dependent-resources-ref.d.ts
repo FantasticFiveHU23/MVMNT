@@ -1,6 +1,13 @@
 export type AmplifyDependentResourcesAttributes = {
+  "api": {
+    "mvmnt": {
+      "GraphQLAPIEndpointOutput": "string",
+      "GraphQLAPIIdOutput": "string",
+      "GraphQLAPIKeyOutput": "string"
+    }
+  },
   "auth": {
-    "app": {
+    "MVMNT": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
       "IdentityPoolId": "string",
@@ -11,7 +18,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "storage": {
-    "s3appstoraged41a151b": {
+    "s3mvmntstoragef02eaf8e": {
       "BucketName": "string",
       "Region": "string"
     }

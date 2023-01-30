@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "mvmnt",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}

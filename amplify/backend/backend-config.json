@@ -1,6 +1,24 @@
 {
+  "api": {
+    "mvmnt": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
-    "app": {
+    "MVMNT": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -31,7 +49,7 @@
     }
   },
   "storage": {
-    "s3appstoraged41a151b": {
+    "s3mvmntstoragef02eaf8e": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"

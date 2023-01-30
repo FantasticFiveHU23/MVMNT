@@ -1,0 +1,38 @@
+.search-bar {
+  box-sizing: border-box;
+
+  position: absolute;
+
+  width: 650px;
+  height: 50px;
+
+  left: 400px;
+  top: 120px;
+
+  background: rgba(217, 217, 217, 0.5);
+
+  border: 1px solid #fbf6f3;
+  border-radius: 14px;
+
+  font-size: 20px;
+  text-align: left;
+  padding-left: 90px;
+  /* direction: rtl; */
+  text-indent: 0px;
+}
+
+.search-button {
+  background-color: transparent;
+  background: url("../images/searchIcon.png") center no-repeat;
+  background-size: contain;
+
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+
+  left: 410px;
+  top: 125px;
+
+  border: none;
+}

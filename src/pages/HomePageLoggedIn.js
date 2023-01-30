@@ -7,8 +7,8 @@ class HomePageLoggedIn extends React.Component {
     return (
       <div>
         <div className="page-content">
-          <Header isLoggedIn={true}/>
-          <SearchBar/>
+          <Header isLoggedIn={true}/>{/* 'isLoggedIn={true}' will check if user is logged in or not. If true/false, Header design will change.*/}
+          <SearchBar/>{/* Import SearchBar to HomePage */}
         </div>
       </div>
     );

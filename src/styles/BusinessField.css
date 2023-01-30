@@ -1,0 +1,10 @@
+.business-field{
+    position: absolute;
+    width: 630px;
+    height: 152px;
+    left: 430px;
+    top: 250px;
+    
+    background: #FBF6F3;
+    border-radius: 10px;
+}

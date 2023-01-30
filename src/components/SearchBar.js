@@ -4,17 +4,19 @@ import "../styles/SearchBar.css";
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
 
+  // Take in search input
   const handleSearchInputChanges = (e) => {
     setSearchValue(e.target.value);
   };
 
+  // Resets search value to "" after a search
   const resetInputField = () => {
     setSearchValue("");
   };
 
+  // Occurs after you submit a search
   const callSearchFunction = (e) => {
     e.preventDefault();
-    // Search function logic here
     console.log(searchValue);
     resetInputField();
   };

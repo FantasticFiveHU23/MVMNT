@@ -1,28 +1,62 @@
-import React from 'react';
+
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
-import './Filters.css';
+
+import "../styles/Filter.css";
 // Title for Filters
 const FilterHeader = ({ filter_title }) => {
   return (
     <header>
       <h1
         className="filter_title"
-        style={{
-          fontSize: "28px",
-          width: "111px",
-          height: "39px",
-          backgroundColor: "#C8D3B0",
-          border: "1px solid #00000",
-          borderRadius: "10px",
-          textAlign: "center",
-          marginLeft: "23px",
-        }}
+        
       >
         {filter_title}
+        <div className="box">
+        </div>
       </h1>
+     
     </header>
+    
   );
 };
+//stars
+const Star = (star_title) => {
+    const stars = document.querySelectorAll(".stars i");
+
+    // Loop through the "stars" NodeList
+    stars.forEach((star, index1) => {
+    // Add an event listener that runs a function when the "click" event is triggered
+    star.addEventListener("click", () => {
+        // Loop through the "stars" NodeList Again
+        stars.forEach((star, index2) => {
+        // Add the "active" class to the clicked star and any stars with a lower index
+        // and remove the "active" class from any stars with a higher index
+        index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+        });
+    });
+    });
+    
+    
+
+
+    return (
+       
+                <><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /><div className="rating-box">
+   
+            <div className="stars">
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+            </div>
+        </div></>
+        
+    );
+};
+
+export {Star};
 
 // FilterHeader name text
 FilterHeader.defaultProps ={
@@ -71,11 +105,13 @@ const Checkboxes =() => {
 
   return (
     <ul>
-      <li><input type="checkbox" id="AppliedCheckbox" onClick={appliedClick}></input> Applied</li>
-      <li><input type="checkbox" id="LocationClick" onClick={locationClick}></input> Location</li>
-      <li><input type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Deadline</li>
+      <li><input class="checkbox" type="checkbox" id="AppliedCheckbox" onClick={appliedClick}></input> Open Now</li>
+      <li><input class="checkbox" type="checkbox" id="LocationClick" onClick={locationClick}></input> Within 50 mi</li>
+      <li><input class="checkbox" type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Price Range</li>
+      <li><input class="checkbox" type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Ratings</li>
     </ul>
+    
   );
     }
 
-export default {FilterHeader, Checkboxes};
+export  {FilterHeader, Checkboxes};

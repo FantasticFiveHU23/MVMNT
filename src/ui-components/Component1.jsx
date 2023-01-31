@@ -7,22 +7,13 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-<<<<<<< HEAD
-import { Image, View } from "@aws-amplify/ui-react";
-=======
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a
 export default function Component1(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-<<<<<<< HEAD
-      width="643px"
-      height="51px"
-=======
       width="1345px"
       height="911px"
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a
       display="block"
       gap="unset"
       alignItems="unset"
@@ -32,32 +23,13 @@ export default function Component1(props) {
       {...getOverrideProps(overrides, "Component1")}
       {...rest}
     >
-<<<<<<< HEAD
-      <Image
-        width="8.24%"
-        height="100%"
-=======
       <View
         width="640px"
         height="418px"
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a
         display="block"
         gap="unset"
         alignItems="unset"
         justifyContent="unset"
-<<<<<<< HEAD
-        position="absolute"
-        top="0%"
-        bottom="0%"
-        left="0%"
-        right="91.76%"
-        padding="0px 0px 0px 0px"
-        objectFit="cover"
-        {...getOverrideProps(overrides, "Header Logo")}
-      ></Image>
-      <View
-        width="590px"
-=======
         overflow="hidden"
         position="absolute"
         top="0%"
@@ -687,7 +659,6 @@ export default function Component1(props) {
       </View>
       <View
         width="640px"
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a
         height="46px"
         display="block"
         gap="unset"

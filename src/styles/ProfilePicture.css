@@ -1,0 +1,9 @@
+.profile-picture {
+    border-radius: 50%; /* Makes the element a circle */
+    width: 50px; /* Adjusts the width of the image */
+    height: 50px; /* Adjusts the height of the image */
+    position: absolute;
+    top: 17px;
+    right: 20px;
+  }
+

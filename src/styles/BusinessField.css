@@ -6,8 +6,7 @@
     width: 800px;
     height: 100%;
     margin: 0 auto;
-    margin-top: 150px;  /* height of search bar + desired margin */
-
+    margin-top: -20px;  /* height of search bar + desired margin */
 }
 
 .business-field {

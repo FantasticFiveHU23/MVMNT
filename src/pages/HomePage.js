@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-<<<<<<< HEAD
 import SearchBar from "../components/SearchBar";
 import BusinessList from "../components/BusinessList";
 
@@ -64,23 +63,10 @@ class HomePage extends React.Component {
           <SearchBar />
           <BusinessList businesses={businesses}/>
 
-=======
-
-class HomePage extends React.Component {
-  render() {
-    return (
-      <div>
-        <div className="page-content">
-          <Header />
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a
         </div>
       </div>
     );
   }
 }
-<<<<<<< HEAD
 export default HomePage;
 
-=======
-export default HomePage;
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a

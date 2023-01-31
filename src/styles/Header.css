@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 /* .Header{
     position: fixed;
 } */
 
-=======
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a
 nav{
     background-color: #A57548;
     overflow: hidden;
@@ -26,13 +23,10 @@ nav a {
 nav a:hover {
     background-color: #ddd;
     color: black;
-<<<<<<< HEAD
 }
 
 .logo-img{
     position: absolute;
     left: 0;
     height: 90px;
-=======
->>>>>>> 81784fec8f229c241fbeffa4bde0ed0283124f8a
 }

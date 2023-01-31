@@ -1,22 +1,47 @@
 import React from "react";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
-import BusinessField from "../components/BusinessField";
+import BusinessList from "../components/BusinessList";
 
 //Home Page (Not Logged In)
 class HomePage extends React.Component {
   render() {
+    const businesses = [
+      {
+        businessName: "Example Business",
+        businessId: "@businessexample1",
+        category: "Food & Drink",
+        rating: 4.5,
+        distance: "1.5 miles",
+        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
+      },
+      {
+        businessName: "Example Business",
+        businessId: "@businessexamle2",
+        category: "Food & Drink",
+        rating: 4.5,
+        distance: "1.5 miles",
+        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
+      },
+            {
+        businessName: "Example Business",
+        businessId: "@businessexample3",
+        category: "Food & Drink",
+        rating: 4.5,
+        distance: "1.5 miles",
+        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
+      },
+    ];
     return (
       <div>
         <div className="page-content">
-          <Header isLoggedIn={false} />{" "}
-          {/* 'isLoggedIn={false}' will check if user is logged in or not. If true/false, Header design will change.*/}
+          <Header isLoggedIn={false} />
           <SearchBar />
-          {/* Import SearchBar to HomePage */}
-          <BusinessField />
+          <BusinessList businesses={businesses}/>
         </div>
       </div>
     );
   }
 }
 export default HomePage;
+

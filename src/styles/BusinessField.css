@@ -1,10 +1,119 @@
-.business-field{
-    position: absolute;
+
+.business-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;  /* height of search bar + desired margin */
+
+}
+
+.business-field {
+    display: flex;
     width: 630px;
-    height: 152px;
-    left: 430px;
-    top: 250px;
-    
-    background: #FBF6F3;
+    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    background: #fbf6f3;
     border-radius: 10px;
+    padding: 20px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    overflow: hidden;
+}
+
+.business-pfp {
+    border-radius: 10px;
+    position: relative;
+    width: 190px;
+    height: 430px;
+
+    top: -14.5px;
+    left: -15px;
+}
+
+.business-header{
+  display: inline-flex;
+  justify-content: left;
+  align-items: flex-start;
+  position: relative;
+  top: -175px;
+  left: 184px;
+  width: 800px;
+  height: 100%;
+  /* padding-right: 10px; */
+}
+/**/
+.business-name {
+    padding-right: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.business-id{
+    top: 5px;
+
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.info-container {
+    display: inline-flex;
+    justify-content: space-between;
+    top: -190px;
+    left: -17px;
+
+    position: relative;
+    top: -175px;
+    left: 175px;
+    width: 500px;
+    height: 100%;
+  }
+
+  
+  .category, .rating, .distance {
+    width: calc(33.33% - 5px/3); 
+    border-right: 1.5px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+
+    font-weight: lighter;
+  }
+  .category{
+    padding-right: 40px;
+  }
+  .distance {
+    border-right: none; /* remove border for last element */
+  }
+  .bio-container{
+    display: flex;
+    width: 400px;
+    max-height: 90px;
+    max-width: 400px;
+    position: relative; 
+
+    top: -171px;
+    left: 186px;
+}
+
+/*
+top: -175px;
+left: 175px;
+width: 500px;
+height: 100%; */
+
+
+.bio{
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

@@ -16,8 +16,6 @@
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
     }
-<<<<<<< HEAD
-=======
   },
   "auth": {
     "MVMNT": {
@@ -56,6 +54,5 @@
       "providerPlugin": "awscloudformation",
       "service": "S3"
     }
->>>>>>> 0f043bdaadb56bb321035ae04378de11e66dd6aa
   }
 }

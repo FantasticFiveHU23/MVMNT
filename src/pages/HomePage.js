@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import BusinessList from "../components/BusinessList";
-
+import {FilterHeader, Checkboxes,Star} from "../components/Filter"
 //Home Page (Not Logged In)
 class HomePage extends React.Component {
   render() {
@@ -61,6 +61,9 @@ class HomePage extends React.Component {
         <div className="page-content">
           <Header isLoggedIn={false} />
           <SearchBar />
+          <FilterHeader/>
+          <Checkboxes/>
+          <Star/>
           <BusinessList businesses={businesses}/>
 
         </div>

@@ -1,7 +1,7 @@
 {
-  "resourceName": "s3appstoraged41a151b",
-  "bucketName": "app-storage-d41a151b",
-  "policyUUID": "31ffbfde",
+  "resourceName": "s3mvmntdatastore",
+  "bucketName": "mvmnt-datastore",
+  "policyUUID": "9115c9f7",
   "storageAccess": "authAndGuest",
   "guestAccess": [
     "READ"

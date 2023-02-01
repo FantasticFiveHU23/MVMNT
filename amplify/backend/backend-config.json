@@ -49,7 +49,7 @@
     }
   },
   "storage": {
-    "s3mvmntstoragef02eaf8e": {
+    "s3mvmntdatastore": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"

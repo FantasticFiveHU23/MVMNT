@@ -39,6 +39,9 @@
       "storage": {
         "s3mvmntstoragef02eaf8e": {},
         "s3mvmntdatastore": {}
+      },
+      "api": {
+        "mvmnt": {}
       }
     }
   }

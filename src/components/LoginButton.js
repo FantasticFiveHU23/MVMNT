@@ -1,17 +1,16 @@
 import React from 'react';
 import '../styles/LoginButton.css';
+import '../styles/ModalLogin.css';
 
-const LoginButton = () => {
-    // const history = useHistory();
-
-    // const handleClick = () => {
-    //   history.push('/home-page-logged-in');
-    // }
-
+class LoginButton extends React.Component {
+  render() {
     return (
-        <button className="login-button">
-            Log In
+      <React.Fragment>
+        <button className="login-button" onClick={this.toggleModal}>
+          Log In
         </button>
+      </React.Fragment>
     );
+  }
 }
 export default LoginButton;

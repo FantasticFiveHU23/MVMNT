@@ -14,7 +14,7 @@ class Header extends React.Component {
                 <a href="/top-sellers">Top Sellers</a>
                 <a href="/categories">Categories</a>
                 <a href="/search">Search</a>
-                {this.props.isLoggedIn ? <ProfilePicture /> : <LoginButton/>} {/* loggedIn=true --> display ProfilePicture loggedIn=false --> display LoginButton */}
+                {this.props.isLoggedIn ? <ProfilePicture /> : <LoginButton/>}
             </nav>
         )
     }

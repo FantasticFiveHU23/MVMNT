@@ -1,0 +1,24 @@
+.modal{
+    background-color: #FCD7AD;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+
+    width: 1000px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+
+}
+.close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+    width: 10px;
+    height: 10px;
+}

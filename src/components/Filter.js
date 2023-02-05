@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import PropTypes from 'prop-types';
 
 import "../styles/Filter.css";
@@ -105,10 +105,10 @@ const Checkboxes =() => {
 
   return (
     <ul>
-      <li><input class="checkbox" type="checkbox" id="AppliedCheckbox" onClick={appliedClick}></input> Open Now</li>
-      <li><input class="checkbox" type="checkbox" id="LocationClick" onClick={locationClick}></input> Within 50 mi</li>
-      <li><input class="checkbox-hidden" type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Price Range</li>
-      <li><input class="checkbox-hidden" type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Ratings</li>
+      <li><input className="checkbox" type="checkbox" id="AppliedCheckbox" onClick={appliedClick}></input> Open Now</li>
+      <li><input className="checkbox" type="checkbox" id="LocationClick" onClick={locationClick}></input> Within 50 mi</li>
+      <li><input className="checkbox-hidden" type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Price Range</li>
+      <li><input className="checkbox-hidden" type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Ratings</li>
     </ul>
     
   );

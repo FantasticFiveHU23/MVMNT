@@ -2,9 +2,16 @@ import React from "react";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import BusinessList from "../components/BusinessList";
+import {API, graphqlOperation} from 'aws-amplify';
+import { listBusinesses } from '../graphql/queries.js'
 
-//Home Page (Not Logged In)
+//Home Page (Not Logged In) 
 class HomePage extends React.Component {
+  state = { business: []}
+  async componentDidMount(){
+    const businessData = await API.graphql(graphqlOperation(listBusinesses));
+    this.setState({ business: businessData.data.listBusinesses.items })
+  }
   render() {
     const businesses = [
       {

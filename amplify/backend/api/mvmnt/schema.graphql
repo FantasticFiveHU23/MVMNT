@@ -32,3 +32,9 @@ type Comment @model {
   post: Reviews @belongsTo
   content: String!
 }
+
+type Test @model {
+  id: ID!
+  name: String!
+  desc: String
+}

@@ -12,7 +12,7 @@ class HomePage extends React.Component {
     return (
       <div>
         <div className="page-content">
-          <Header isLoggedIn={false} />
+          <Header isLoggedIn={this.props.isLoggedIn} />
           <SearchBar />
           <FilterHeader/>
           <Checkboxes/>
@@ -25,4 +25,3 @@ class HomePage extends React.Component {
   }
 }
 export default HomePage;
-

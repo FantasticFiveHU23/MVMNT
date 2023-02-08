@@ -30,9 +30,7 @@
       "unauthRoleName": "amplify-mvmnt-dev-212732-unauthRole",
       "StackName": "amplify-mvmnt-dev-212732",
       "StackId": "arn:aws:cloudformation:us-east-1:632009276319:stack/amplify-mvmnt-dev-212732/7e2b5fc0-9ac5-11ed-a496-1280dcdd8785",
-      "AmplifyAppId": "d2563t53q1oliy",
-      "AuthRoleName": "amplify-mvmnt-dev-212732-authRole",
-      "unauthRoleName": "amplify-mvmnt-dev-212732-unauthRole"
+      "AmplifyAppId": "d2563t53q1oliy"
     },
     "categories": {
       "auth": {

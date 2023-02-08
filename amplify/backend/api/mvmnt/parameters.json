@@ -1,5 +1,8 @@
 {
   "AppSyncApiName": "mvmnt",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false, 
+  "hostedUI": false,
+  "authRoleName": "amplify-mvmnt-dev-212732-authRole",
+  "unauthRoleName": "amplify-mvmnt-dev-212732-unauthRole"
 }

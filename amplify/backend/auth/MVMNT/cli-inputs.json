@@ -61,6 +61,6 @@
     },
     "breakCircularDependency": true,
     "dependsOn": [],
-    "hostedUI": false
+    "hostedUI": true
   }
 }

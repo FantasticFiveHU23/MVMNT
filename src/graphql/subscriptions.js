@@ -394,3 +394,36 @@ export const onDeleteComment = /* GraphQL */ `
     }
   }
 `;
+export const onCreateTest = /* GraphQL */ `
+  subscription OnCreateTest($filter: ModelSubscriptionTestFilterInput) {
+    onCreateTest(filter: $filter) {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateTest = /* GraphQL */ `
+  subscription OnUpdateTest($filter: ModelSubscriptionTestFilterInput) {
+    onUpdateTest(filter: $filter) {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteTest = /* GraphQL */ `
+  subscription OnDeleteTest($filter: ModelSubscriptionTestFilterInput) {
+    onDeleteTest(filter: $filter) {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+    }
+  }
+`;

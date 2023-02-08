@@ -242,3 +242,32 @@ export const listComments = /* GraphQL */ `
     }
   }
 `;
+export const getTest = /* GraphQL */ `
+  query GetTest($id: ID!) {
+    getTest(id: $id) {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listTests = /* GraphQL */ `
+  query ListTests(
+    $filter: ModelTestFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listTests(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;

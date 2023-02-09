@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import HomePage from './HomePage';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <div className="App">

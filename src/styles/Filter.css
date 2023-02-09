@@ -1,0 +1,73 @@
+
+*:not(h1){
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+h1{
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  background-color: rgba(251, 246,243, 0.67);
+}
+ul{
+  position: absolute;
+  list-style-type: none;
+  top: 270px;
+  height:20px;
+  left: 80px;
+  line-height: 25px;
+ 
+  
+  
+ 
+}
+.stars{
+  position:absolute;
+  top:370px;
+  left:80px;
+  list-style-type: none;
+
+}
+
+.box{
+ 
+
+  height: 120px;
+  width: 92px;
+  background-color: rgba(251, 246,243, 0.67);
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 10
+}
+
+
+.rating-box header {
+  font-size: 22px;
+  color: #f3ecec;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.rating-box .stars {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.stars i {
+  color: #7e7e7e;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.stars i.active {
+  color: #ff9c1a;
+}
+.checkbox-hidden{
+  
+      position: absolute;
+      left: -9999px;
+}

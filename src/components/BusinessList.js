@@ -4,18 +4,21 @@ import "../styles/ListStyle.css";
 
 const BusinessList = ({ businesses }) => {
   return (
-    <div className="business-list">
-      {businesses && businesses.map((business) => (
-        <BusinessField
-          key={business.businessId}
-          businessName={business.businessName}
-          businessId={business.businessId}
-          category={business.category}
-          rating={business.rating}
-          distance={business.distance}
-          bio={business.bio}
-        />
-      ))}
+    <div className="business-list-container">
+      <div className="business-list">
+        {businesses &&
+          businesses.map((business) => (
+            <BusinessField
+              key={business.businessId}
+              businessName={business.businessName}
+              businessId={business.businessId}
+              category={business.category}
+              rating={business.rating}
+              distance={business.distance}
+              bio={business.bio}
+            />
+          ))}
+      </div>
     </div>
   );
 };

@@ -1,13 +1,13 @@
 import '../styles/App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import HomePage from './HomePage';
-// import HomePageLoggedIn from './HomePageLoggedIn';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
   return (
-    
     <div className="App">
-      <HomePage/>
+      <HomePage isLoggedIn={isLoggedIn} />
     </div>
   );
 }

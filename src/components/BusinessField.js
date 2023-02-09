@@ -10,6 +10,7 @@ const BusinessField = ({
   bio,
 }) => {
   return (
+    
     <div className="business-container">
       <div className="business-field">
         <img

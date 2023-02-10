@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/LoginButton.css';
 import '../styles/ModalLogin.css';
+import ModalLogin from './Modal/ModalLogin';
 
 class LoginButton extends React.Component {
   state = {
@@ -25,7 +26,7 @@ class LoginButton extends React.Component {
               <span className="close-button" onClick={this.toggleModal}>
                 &times;
               </span>
-              {/* Add the form for the login here */}
+              <ModalLogin/>
             </div>
           </div>
         ) : null}

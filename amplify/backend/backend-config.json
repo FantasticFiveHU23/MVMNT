@@ -1,6 +1,6 @@
 {
   "api": {
-    "mvmnt": {
+    "MVMNT": {
       "dependsOn": [],
       "output": {
         "authConfig": {
@@ -23,7 +23,7 @@
     }
   },
   "auth": {
-    "MVMNT": {
+    "app": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -54,7 +54,7 @@
     }
   },
   "storage": {
-    "s3mvmntdatastore": {
+    "s3appstoraged41a151b": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"

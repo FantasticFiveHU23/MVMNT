@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import BusinessList from "../components/BusinessList";
-import {API, graphqlOperation} from 'aws-amplify';
+import {API, graphlOperation} from 'aws-amplify';
 import { listBusinesses } from '../graphql/queries.js'
 
 //Home Page (Not Logged In) 

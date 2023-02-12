@@ -2,9 +2,9 @@
   "version": "1",
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "mvmnta7c39a93",
-    "userPoolName": "MVMNT",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "app057c0e09",
+    "userPoolName": "app",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -30,10 +30,10 @@
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "MVMNTa7c39a93_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "app057c0e09_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "a7c39a93",
-    "resourceName": "MVMNT",
+    "sharedId": "057c0e09",
+    "resourceName": "app",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",
     "usernameAttributes": [
@@ -60,7 +60,6 @@
       ]
     },
     "breakCircularDependency": true,
-    "dependsOn": [],
-    "hostedUi": true
+    "dependsOn": []
   }
 }

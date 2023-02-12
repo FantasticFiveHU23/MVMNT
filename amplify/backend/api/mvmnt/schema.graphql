@@ -29,11 +29,4 @@ type Comment @model @auth(rules: [{allow: public}]) {
   id: ID!
   post: Reviews @belongsTo
   content: String!
-}
-
-type Test @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  name: String!
-  desc: String
-}
- 
+} 

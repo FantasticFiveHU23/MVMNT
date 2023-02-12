@@ -36,11 +36,13 @@
     },
     "categories": {
       "auth": {
-        "MVMNT": {}
+        "MVMNT": {},
+        "app": {}
       },
       "storage": {
         "s3mvmntstoragef02eaf8e": {},
-        "s3mvmntdatastore": {}
+        "s3mvmntdatastore": {},
+        "s3appstoraged41a151b": {}
       },
       "api": {
         "mvmnt": {}

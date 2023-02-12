@@ -2,31 +2,38 @@ import React, { Component } from "react";
 
 class ModalLogin extends Component {
   render() {
+    const { handleShowSignUp } = this.props;
+
     return (
-      <form className="form">
+      <form className="login-form">
         <div>
-          <label className="email">Username/Email</label>
-          <input type="email" id="email" className="email-input" required />
+          <button className="login-create-account-prompt" onClick={handleShowSignUp}>
+            Need an account?
+          </button>
         </div>
         <div>
-          <label className="password">Password</label>
+          <label className="login-email">Username/Email</label>
+          <input type="email" id="email" className="login-email-input" required />
+        </div>
+        <div>
+          <label className="login-password">Password</label>
           <input
             type="password"
             id="password"
-            className="password-input"
+            className="login-password-input"
             required
           />
         </div>
         <div>
-          <input className="login" type="submit" value="Log In" />
+          <input className="login-login" type="submit" value="Log In" />
         </div>
         <div>
-          <p className="or-login-label">Or</p>
+          <p className="login-or-login-label">Or</p>
         </div>
         <div>
-          <button className="social-media-button-google"></button>
-          <button className="social-media-button-apple"></button>
-          <button className="social-media-button-facebook"></button>
+          <button className="login-social-media-button-google"></button>
+          <button className="login-social-media-button-apple"></button>
+          <button className="login-social-media-button-facebook"></button>
         </div>
       </form>
     );

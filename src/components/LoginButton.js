@@ -1,7 +1,12 @@
 import React from 'react';
 import '../styles/LoginButton.css';
-import '../styles/ModalLogin.css';
-import ModalLogin from './Modal/ModalLogin';
+import '../styles/ModalPopUp.css';
+import ModalPopUp from './ModalPopUp';
+
+// import ModalLogin from './Modal/ModalLogin';
+// import ModalSignUp from './Modal/ModalSignUp';
+// import '../styles/ModalLogin.css';
+// import '../styles/ModalSignup.css';
 
 class LoginButton extends React.Component {
   state = {
@@ -22,16 +27,15 @@ class LoginButton extends React.Component {
         </button>
         {this.state.showModal ? (
           <div className="modal">
-            <div className="modal-content">
-              <span className="close-button" onClick={this.toggleModal}>
-                &times;
-              </span>
-              <ModalLogin/>
-            </div>
+            <span className="close-button" onClick={this.toggleModal}>
+              &times;
+            </span>
+            <ModalPopUp />
           </div>
         ) : null}
       </React.Fragment>
     );
   }
 }
+
 export default LoginButton;

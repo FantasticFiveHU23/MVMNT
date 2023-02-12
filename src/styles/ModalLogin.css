@@ -1,20 +1,4 @@
-.modal{
-    display: flex;
-    background-color: #FCD7AD;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 20px;
-
-    width: 550px;
-    height: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-
-.close-button{
+.login-close-button{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -24,7 +8,7 @@
     height: 10px;
 }
 
-.form {
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,15 +22,27 @@
     width: 330px;
     height: 409px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px #ccc;
   }
   
+.login-create-account-prompt{
+    background-color: transparent;
+    border: 0;
+    content: "";
 
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: underline;
 
-  .email-input, .password-input {
+    line-height: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: blue;
+    cursor: pointer;
+}
+
+.login-email-input, .login-password-input {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -59,7 +55,7 @@
     border-radius: 20px;
 }
 
-.email, .password{
+.login-email, .login-password{
     display: flex;
     align-items:center;
     flex-direction: column;
@@ -73,7 +69,7 @@
 }
 
 
-.login{
+.login-login{
     background: #5296A5;
     border: 1px solid #FBF6F3;
     border-radius: 5px;
@@ -87,9 +83,10 @@
     width: 135px;
 
     color: #FBF6F3;
+    cursor: pointer;
 }
 
-.or-login-label{
+.login-or-login-label{
     font-family: 'Lato';
     font-style: italic;
     font-weight: 600;
@@ -100,7 +97,7 @@
     color: #000000;
 }
 
-.or-login-label::before {
+.login-or-login-label::before {
     content: "";
     display: inline-block;
     border-bottom: 1px solid #000000;
@@ -110,7 +107,7 @@
     vertical-align: middle;
   }
   
-  .or-login-label::after {
+  .login-or-login-label::after {
     content: "";
     display: inline-block;
     border-bottom: 1px solid #000000;
@@ -121,7 +118,7 @@
   }
   
 
-.social-media-button-google {
+.login-social-media-button-google {
     background-image: url(../images/google-logo.png);
     background-size: cover;
     background-color: transparent;
@@ -130,8 +127,9 @@
     margin-left: 30px;
     margin-right:30px;
     border: 0;
+    cursor: pointer;
 }
-.social-media-button-apple{
+.login-social-media-button-apple{
     background-image: url(../images/apple-logo.png);
     background-size: cover;
     background-color: transparent;
@@ -140,8 +138,9 @@
     margin-left: 30px;
     margin-right:30px;
     border: 0;
+    cursor: pointer;
 }
-.social-media-button-facebook {
+.login-social-media-button-facebook {
     background-image: url(../images/facebook-logo.png);
     background-size: cover;
     background-color: transparent;
@@ -150,4 +149,5 @@
     margin-left: 30px;
     margin-right:30px;
     border: 0;
+    cursor: pointer;
 }

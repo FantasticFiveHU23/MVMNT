@@ -9,6 +9,7 @@ const Header = (props) => {
         // Create list of header options. (Logo will be a link to go to HomePage)
         <nav>
             <img href="/home-page" className="logo-img" src={logo} alt="logo" />
+            <a href='/'>Home</a>
             <a href="/local-finds">Local Finds</a>
             <a href="/top-sellers">Top Sellers</a>
             <a href="/categories">Categories</a>

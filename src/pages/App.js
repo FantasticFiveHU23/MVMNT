@@ -1,13 +1,14 @@
 import '../styles/App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import HomePage from './HomePage';
-// import HomePageLoggedIn from './HomePageLoggedIn';
 
 function App() {
+  // eslint-disable-next-line
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
-    
     <div className="App">
-      <HomePage/>
+      <HomePage isLoggedIn={isLoggedIn} />
     </div>
   );
 }

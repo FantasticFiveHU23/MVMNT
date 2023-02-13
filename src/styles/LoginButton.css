@@ -4,18 +4,24 @@ box-sizing: border-box;
 position: absolute;
 left: 88.12%;
 right: 2.34%;
-top: 2.63%;
+top: 3.63%;
 bottom: 91.63%;
+
+height: 43px;
+width: 135px;
 
 background: #5296A5;
 border: 1px solid #FBF6F3;
 border-radius: 5px;
 
-font-family: 'Lato';
+font-family: 'Lato', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 22px;
 line-height: 13px;
 
 color: #FBF6F3;
+
+cursor: pointer;
+
 }

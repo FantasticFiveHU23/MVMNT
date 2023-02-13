@@ -2,7 +2,7 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "MVMNT",
+  "projectName": "app",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {

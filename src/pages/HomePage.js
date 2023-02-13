@@ -2,7 +2,10 @@ import React from "react";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import BusinessList from "../components/BusinessList";
-import {API, graphlOperation} from 'aws-amplify';
+import Footer from "../components/Footer";
+import {FilterHeader, Checkboxes,Star} from "../components/Filter";
+import businesses from "../components/BusinessInfoEx";
+import {API, graphqlOperation} from 'aws-amplify';
 import { listBusinesses } from '../graphql/queries.js'
 
 //Home Page (Not Logged In) 
@@ -13,67 +16,19 @@ class HomePage extends React.Component {
     this.setState({ business: businessData.data.listBusinesses.items })
   }
   render() {
-    const businesses = [
-      {
-        businessName: "Example Business",
-        businessId: "@businessexample1",
-        category: "Food & Drink",
-        rating: 4.5,
-        distance: "1.5 miles",
-        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
-      },
-      {
-        businessName: "Example Business",
-        businessId: "@businessexamle2",
-        category: "Food & Drink",
-        rating: 4.5,
-        distance: "1.5 miles",
-        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
-      },
-            {
-        businessName: "Example Business",
-        businessId: "@businessexample3",
-        category: "Food & Drink",
-        rating: 4.5,
-        distance: "1.5 miles",
-        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
-      },
-      {
-        businessName: "Example Business",
-        businessId: "@businessexample4",
-        category: "Food & Drink",
-        rating: 4.5,
-        distance: "1.5 miles",
-        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
-      },
-      {
-        businessName: "Example Business",
-        businessId: "@businessexample5",
-        category: "Food & Drink",
-        rating: 4.5,
-        distance: "1.5 miles",
-        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
-      },
-      {
-        businessName: "Example Business",
-        businessId: "@businessexample6",
-        category: "Food & Drink",
-        rating: 4.5,
-        distance: "1.5 miles",
-        bio: "This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. This is an example business bio. ",
-      },
-    ];
     return (
       <div>
         <div className="page-content">
-          <Header isLoggedIn={false} />
+          <Header isLoggedIn={this.props.isLoggedIn} />
           <SearchBar />
+          <FilterHeader/>
+          <Checkboxes/>
+          <Star/>
           <BusinessList businesses={businesses}/>
-
         </div>
+        <Footer/>
       </div>
     );
   }
 }
 export default HomePage;
-

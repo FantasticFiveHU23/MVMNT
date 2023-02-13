@@ -6,15 +6,14 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ImageProps, ViewProps } from "@aws-amplify/ui-react";
+import { TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LoadviewOverridesProps = {
-    Loadview?: PrimitiveOverrideProps<ViewProps>;
-    "Loading Screen "?: PrimitiveOverrideProps<ViewProps>;
-    logo?: PrimitiveOverrideProps<ImageProps>;
-    "Frame 1"?: PrimitiveOverrideProps<ViewProps>;
+export declare type RegisterButtonOverridesProps = {
+    RegisterButton?: PrimitiveOverrideProps<ViewProps>;
+    registerButtonShape?: PrimitiveOverrideProps<ViewProps>;
+    registerText?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type LoadviewProps = React.PropsWithChildren<Partial<ViewProps> & {
-    overrides?: LoadviewOverridesProps | undefined | null;
+export declare type RegisterButtonProps = React.PropsWithChildren<Partial<ViewProps> & {
+    overrides?: RegisterButtonOverridesProps | undefined | null;
 }>;
-export default function Loadview(props: LoadviewProps): React.ReactElement;
+export default function RegisterButton(props: RegisterButtonProps): React.ReactElement;

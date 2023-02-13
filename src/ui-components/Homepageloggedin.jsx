@@ -6,14 +6,10 @@
 
 /* eslint-disable */
 import * as React from "react";
-import {
-  getOverrideProps,
-  useNavigateAction,
-} from "@aws-amplify/ui-react/internal";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Homepageloggedin(props) {
   const { overrides, ...rest } = props;
-  const searchOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <View
       width="640px"
@@ -650,9 +646,6 @@ export default function Homepageloggedin(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Search"
-            onClick={() => {
-              searchOnClick();
-            }}
             {...getOverrideProps(overrides, "search")}
           ></Text>
           <Text

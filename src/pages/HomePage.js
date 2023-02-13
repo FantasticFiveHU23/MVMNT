@@ -5,7 +5,7 @@ import BusinessList from "../components/BusinessList";
 import Footer from "../components/Footer";
 import {FilterHeader, Checkboxes,Star} from "../components/Filter";
 import businesses from "../components/BusinessInfoEx";
-import {API, graphlOperation} from 'aws-amplify';
+import {API, graphqlOperation} from 'aws-amplify';
 import { listBusinesses } from '../graphql/queries.js'
 
 //Home Page (Not Logged In) 

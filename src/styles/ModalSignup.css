@@ -30,7 +30,7 @@
     border: 0;
     content: "";
 
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 15px;
@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0 10px;
     width: 365px;
     height: 30px;
     margin-top: 5px;
@@ -63,7 +64,8 @@
     flex-direction: column;
 
     font-style: normal;
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
     font-size: 20px;
     line-height: 12px;
     margin-top: 10px;
@@ -77,6 +79,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
+    font-family: 'Lato', sans-serif;
     line-height: 13px;
     margin-top: 15px;
 
@@ -92,6 +95,7 @@
     font-style: italic;
     font-weight: 600;
     font-size: 15px;
+    font-family: 'Lato', sans-serif;
     line-height: 12px;
     margin-top: 20px;
     margin-bottom: 20px;

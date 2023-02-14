@@ -5,7 +5,7 @@ import Dashboard from "../components/B-page/Dashboardbutton";
 import Footer from "../components/Footer";
 import businesses from "../components/BusinessInfoEx";
 import '../styles/BusinessPage.css'
-
+import Review from "../components/B-page/reviewfeed";
 
 class Businesspage extends React.Component {
   render() {
@@ -18,6 +18,7 @@ class Businesspage extends React.Component {
 
           
           <Dashboard/>
+          <Review/>
    
         </div>
         <Footer/>

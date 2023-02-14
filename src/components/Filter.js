@@ -22,38 +22,40 @@ const FilterHeader = ({ filter_title }) => {
 };
 //stars
 const Star = (star_title) => {
-    const stars = document.querySelectorAll(".stars i");
+  const stars = document.querySelectorAll(".stars i");
 
-    // Loop through the "stars" NodeList
-    stars.forEach((star, index1) => {
+  // Loop through the "stars" NodeList
+  stars.forEach((star, index1) => {
     // Add an event listener that runs a function when the "click" event is triggered
     star.addEventListener("click", () => {
-        // Loop through the "stars" NodeList Again
-        stars.forEach((star, index2) => {
+      // Loop through the "stars" NodeList Again
+      stars.forEach((star, index2) => {
         // Add the "active" class to the clicked star and any stars with a lower index
         // and remove the "active" class from any stars with a higher index
-        index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
-        });
+        index1 >= index2
+          ? star.classList.add("active")
+          : star.classList.remove("active");
+      });
     });
-    });
-    
-    
+  });
 
-
-    return (
-       
-                <><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /><div className="rating-box">
-   
-            <div className="stars">
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-            </div>
-        </div></>
-        
-    );
+  return (
+    <>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      />
+      <div className="rating-box">
+        <div className="stars">
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export {Star};
@@ -104,7 +106,7 @@ const Checkboxes =() => {
   };
 
   return (
-    <ul>
+    <ul className="checkbox-list">
       <li><input className="checkbox" type="checkbox" id="AppliedCheckbox" onClick={appliedClick}></input> Open Now</li>
       <li><input className="checkbox" type="checkbox" id="LocationClick" onClick={locationClick}></input> Within 50 mi</li>
       <li><input className="checkbox-hidden" type="checkbox" id="DeadlineClick" onClick={deadlineClick}></input> Price Range</li>

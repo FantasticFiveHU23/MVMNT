@@ -35,4 +35,3 @@ const BusinessField = ({
 };
 export default BusinessField;
 
-// <p className="distance">Distance: {distance}</p>

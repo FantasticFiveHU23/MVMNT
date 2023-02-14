@@ -1,6 +1,6 @@
 import '../styles/App.css';
 import React, { useState } from 'react';
-import HomePage from './HomePage';
+import {HomePage} from './HomePage';
 
 function App() {
   // eslint-disable-next-line

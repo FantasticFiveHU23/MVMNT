@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import FormLoginButton from './FormLoginButton';
-import Header from './Header';
+import React, { useState } from "react";
+import FormLoginButton from "./FormLoginButton";
+import Header from "./Header";
 
-const ParentLoginState = () => {
+export function ParentLoginState() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const updateLogin = (loggedIn) => {
@@ -15,6 +15,4 @@ const ParentLoginState = () => {
       <FormLoginButton updateLogin={updateLogin} />
     </div>
   );
-};
-
-export default ParentLoginState;
+}

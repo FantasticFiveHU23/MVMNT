@@ -95,8 +95,12 @@ type EagerUser = {
   readonly username: string;
   readonly email: string;
   readonly reviews?: (Reviews | null)[] | null;
+  readonly firstname: string;
+  readonly lastname: string;
+  readonly Business?: Business | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
+  readonly userBusinessId?: string | null;
 }
 
 type LazyUser = {
@@ -108,8 +112,12 @@ type LazyUser = {
   readonly username: string;
   readonly email: string;
   readonly reviews: AsyncCollection<Reviews>;
+  readonly firstname: string;
+  readonly lastname: string;
+  readonly Business: AsyncItem<Business | undefined>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
+  readonly userBusinessId?: string | null;
 }
 
 export declare type User = LazyLoading extends LazyLoadingDisabled ? EagerUser : LazyUser

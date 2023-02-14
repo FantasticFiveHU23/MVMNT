@@ -6,20 +6,16 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { RegisterButtonProps } from "./RegisterButton";
 import { ViewProps } from "@aws-amplify/ui-react";
-import { UserTypeSelectionProps } from "./UserTypeSelection";
-import { SignUpInfoProps } from "./SignUpInfo";
-import { HeaderProps } from "./Header";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type UsercancreateanaccountOverridesProps = {
     Usercancreateanaccount?: PrimitiveOverrideProps<ViewProps>;
-    RegisterButton?: RegisterButtonProps;
-    signUpShape?: PrimitiveOverrideProps<ViewProps>;
-    UserTypeSelection?: UserTypeSelectionProps;
-    SignUpInfo?: SignUpInfoProps;
+    RegisterButton?: PrimitiveOverrideProps<ViewProps>;
+    UserTypeSelection?: PrimitiveOverrideProps<ViewProps>;
+    SignUpInfo?: PrimitiveOverrideProps<ViewProps>;
     UserHasAccount?: PrimitiveOverrideProps<ViewProps>;
-    Header1?: HeaderProps;
+    signUpShape?: PrimitiveOverrideProps<ViewProps>;
+    Header1?: PrimitiveOverrideProps<ViewProps>;
 } & EscapeHatchProps;
 export declare type UsercancreateanaccountProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: UsercancreateanaccountOverridesProps | undefined | null;

@@ -12,7 +12,6 @@ export declare type LoadviewOverridesProps = {
     Loadview?: PrimitiveOverrideProps<ViewProps>;
     "Loading Screen "?: PrimitiveOverrideProps<ViewProps>;
     logo?: PrimitiveOverrideProps<ImageProps>;
-    "Frame 1"?: PrimitiveOverrideProps<ViewProps>;
 } & EscapeHatchProps;
 export declare type LoadviewProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: LoadviewOverridesProps | undefined | null;

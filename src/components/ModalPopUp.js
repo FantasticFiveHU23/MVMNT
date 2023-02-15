@@ -4,6 +4,7 @@ import ModalSignUp from "./Modal/ModalSignUp";
 import "../styles/ModalLogin.css";
 import "../styles/ModalSignup.css";
 
+
 export function ModalPopUp(props) {
   const [showSignUp, setShowSignUp] = React.useState(false);
   const handleShowSignUp = () => {

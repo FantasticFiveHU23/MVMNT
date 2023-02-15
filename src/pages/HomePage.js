@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {Header} from "../components/Header";
 import {SearchBar} from "../components/SearchBar";
 import { BusinessList } from "../components/BusinessList";
-import {Footer} from "../components/Footer";
 import { FilterHeader, Checkboxes, Star } from "../components/Filter";
 import businesses from "../components/BusinessInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
@@ -30,7 +29,6 @@ export function HomePage({ isLoggedIn }) {
         <Star />
         <BusinessList businesses={businesses} />
       </div>
-      <Footer />
     </div>
   );
 }

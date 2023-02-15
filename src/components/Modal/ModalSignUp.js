@@ -35,6 +35,10 @@ class ModalSignUp extends Component {
           <p className="signup-or-login-label">Or</p>
         </div>
         <div>
+          <input className="customer-signup" type="checkbox"></input>
+          <input className="business-signup" type="checkbox"></input>
+        </div>
+        <div>
           <button className="signup-social-media-button-google"></button>
           <button className="signup-social-media-button-apple"></button>
           <button className="signup-social-media-button-facebook"></button>

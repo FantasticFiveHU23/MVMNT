@@ -1,16 +1,28 @@
-import React from 'react';
-import '../styles/LoginButton.css';
-import '../styles/ModalLogin.css';
+import React from "react";
+import "../styles/LoginButton.css";
+import "../styles/ModalPopUp.css";
+import {ModalPopUp} from "./ModalPopUp";
 
-class LoginButton extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <button className="login-button" onClick={this.toggleModal}>
-          Log In
-        </button>
-      </React.Fragment>
-    );
-  }
-}
-export default LoginButton;
+export function LoginButton() {
+  const [showModal, setShowModal] = React.useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
+  return (
+    <React.Fragment>
+      <button className="login-button" onClick={toggleModal}>
+        Log In
+      </button>
+      {showModal ? (
+        <div className="modal">
+          <span className="close-button" onClick={toggleModal}>
+            ×
+          </span>
+          <ModalPopUp />
+        </div>
+      ) : null}
+    </React.Fragment>
+  );
+};

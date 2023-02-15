@@ -1,12 +1,13 @@
 import '../styles/App.css';
 import React, { useState } from 'react';
-import HomePage from './HomePage';
+import {HomePage} from './HomePage';
 import Businesspage from './Businesspage';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
-import Header from "../components/Header";
+import {Header} from "../components/Header";
 import { Link } from 'react-router-dom';
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  // eslint-disable-next-line
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <div className="App">

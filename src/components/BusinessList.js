@@ -2,7 +2,7 @@ import React from "react";
 import BusinessField from "./BusinessField";
 import "../styles/ListStyle.css";
 
-const BusinessList = ({ businesses }) => {
+export function BusinessList({ businesses }) {
   return (
     <div className="business-list-container">
       <div className="business-list">
@@ -21,6 +21,4 @@ const BusinessList = ({ businesses }) => {
       </div>
     </div>
   );
-};
-
-export default BusinessList;
+}

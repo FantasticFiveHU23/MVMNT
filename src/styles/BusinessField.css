@@ -55,11 +55,13 @@
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
+    font-family: 'Lato', sans-serif;
 }
 
 .business-id{
     top: 5px;
 
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 25px;
@@ -87,12 +89,15 @@
     box-sizing: border-box;
 
     font-weight: lighter;
+    font-family: 'Lato', sans-serif;
   }
   .category{
     padding-right: 40px;
+    font-family: 'Lato', sans-serif;
   }
   .distance {
     border-right: none; /* remove border for last element */
+    font-family: 'Lato', sans-serif;
   }
   .bio-container{
     display: flex;
@@ -100,6 +105,7 @@
     max-height: 90px;
     max-width: 400px;
     position: relative; 
+    
 
     top: -90%;
     left: 20%;
@@ -114,6 +120,7 @@ height: 100%; */
 
 .bio{
     text-align: left;
+    font-family: 'Lato', sans-serif;
     display: -webkit-box;
     -webkit-line-clamp: 100;
     -webkit-box-orient: vertical;

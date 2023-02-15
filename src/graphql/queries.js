@@ -16,13 +16,22 @@ export const getBusiness = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
       }
+      category
+      username
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -42,11 +51,55 @@ export const listBusinesses = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
         }
+        category
+        username
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       nextToken
+      startedAt
+    }
+  }
+`;
+export const syncBusinesses = /* GraphQL */ `
+  query SyncBusinesses(
+    $filter: ModelBusinessFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncBusinesses(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        name
+        rating
+        location
+        account
+        email
+        reviews {
+          nextToken
+          startedAt
+        }
+        category
+        username
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
     }
   }
 `;
@@ -62,13 +115,42 @@ export const getUser = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
+      }
+      firstname
+      lastname
+      Business {
+        id
+        name
+        rating
+        location
+        account
+        email
+        reviews {
+          nextToken
+          startedAt
+        }
+        category
+        username
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      userBusinessId
     }
   }
 `;
@@ -85,11 +167,84 @@ export const listUsers = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
+        }
+        firstname
+        lastname
+        Business {
+          id
+          name
+          rating
+          location
+          account
+          email
+          category
+          username
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userBusinessId
       }
       nextToken
+      startedAt
+    }
+  }
+`;
+export const syncUsers = /* GraphQL */ `
+  query SyncUsers(
+    $filter: ModelUserFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncUsers(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        username
+        email
+        reviews {
+          nextToken
+          startedAt
+        }
+        firstname
+        lastname
+        Business {
+          id
+          name
+          rating
+          location
+          account
+          email
+          category
+          username
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userBusinessId
+      }
+      nextToken
+      startedAt
     }
   }
 `;
@@ -107,9 +262,15 @@ export const getReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
         }
+        category
+        username
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       user {
         id
@@ -117,9 +278,31 @@ export const getReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
+        }
+        firstname
+        lastname
+        Business {
+          id
+          name
+          rating
+          location
+          account
+          email
+          category
+          username
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userBusinessId
       }
       comments {
         items {
@@ -127,12 +310,19 @@ export const getReviews = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           reviewsCommentsId
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       businessReviewsId
       userReviewsId
     }
@@ -155,25 +345,102 @@ export const listReviews = /* GraphQL */ `
           location
           account
           email
+          category
+          username
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         user {
           id
           username
           email
+          firstname
+          lastname
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+          userBusinessId
         }
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         businessReviewsId
         userReviewsId
       }
       nextToken
+      startedAt
+    }
+  }
+`;
+export const syncReviews = /* GraphQL */ `
+  query SyncReviews(
+    $filter: ModelReviewsFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncReviews(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        title
+        business {
+          id
+          name
+          rating
+          location
+          account
+          email
+          category
+          username
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        user {
+          id
+          username
+          email
+          firstname
+          lastname
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+          userBusinessId
+        }
+        comments {
+          nextToken
+          startedAt
+        }
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        businessReviewsId
+        userReviewsId
+      }
+      nextToken
+      startedAt
     }
   }
 `;
@@ -191,27 +458,45 @@ export const getComment = /* GraphQL */ `
           location
           account
           email
+          category
+          username
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         user {
           id
           username
           email
+          firstname
+          lastname
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+          userBusinessId
         }
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         businessReviewsId
         userReviewsId
       }
       content
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       reviewsCommentsId
     }
   }
@@ -230,15 +515,61 @@ export const listComments = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         content
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         reviewsCommentsId
       }
       nextToken
+      startedAt
+    }
+  }
+`;
+export const syncComments = /* GraphQL */ `
+  query SyncComments(
+    $filter: ModelCommentFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncComments(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        post {
+          id
+          title
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+          businessReviewsId
+          userReviewsId
+        }
+        content
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        reviewsCommentsId
+      }
+      nextToken
+      startedAt
     }
   }
 `;

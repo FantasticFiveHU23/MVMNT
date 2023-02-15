@@ -16,13 +16,22 @@ export const onCreateBusiness = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
       }
+      category
+      username
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -41,13 +50,22 @@ export const onUpdateBusiness = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
       }
+      category
+      username
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -66,13 +84,22 @@ export const onDeleteBusiness = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
       }
+      category
+      username
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
     }
   }
 `;
@@ -88,13 +115,42 @@ export const onCreateUser = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
+      }
+      firstname
+      lastname
+      Business {
+        id
+        name
+        rating
+        location
+        account
+        email
+        reviews {
+          nextToken
+          startedAt
+        }
+        category
+        username
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      userBusinessId
     }
   }
 `;
@@ -110,13 +166,42 @@ export const onUpdateUser = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
+      }
+      firstname
+      lastname
+      Business {
+        id
+        name
+        rating
+        location
+        account
+        email
+        reviews {
+          nextToken
+          startedAt
+        }
+        category
+        username
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      userBusinessId
     }
   }
 `;
@@ -132,13 +217,42 @@ export const onDeleteUser = /* GraphQL */ `
           title
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           businessReviewsId
           userReviewsId
         }
         nextToken
+        startedAt
+      }
+      firstname
+      lastname
+      Business {
+        id
+        name
+        rating
+        location
+        account
+        email
+        reviews {
+          nextToken
+          startedAt
+        }
+        category
+        username
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      userBusinessId
     }
   }
 `;
@@ -156,9 +270,15 @@ export const onCreateReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
         }
+        category
+        username
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       user {
         id
@@ -166,9 +286,31 @@ export const onCreateReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
+        }
+        firstname
+        lastname
+        Business {
+          id
+          name
+          rating
+          location
+          account
+          email
+          category
+          username
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userBusinessId
       }
       comments {
         items {
@@ -176,12 +318,19 @@ export const onCreateReviews = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           reviewsCommentsId
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       businessReviewsId
       userReviewsId
     }
@@ -201,9 +350,15 @@ export const onUpdateReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
         }
+        category
+        username
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       user {
         id
@@ -211,9 +366,31 @@ export const onUpdateReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
+        }
+        firstname
+        lastname
+        Business {
+          id
+          name
+          rating
+          location
+          account
+          email
+          category
+          username
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userBusinessId
       }
       comments {
         items {
@@ -221,12 +398,19 @@ export const onUpdateReviews = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           reviewsCommentsId
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       businessReviewsId
       userReviewsId
     }
@@ -246,9 +430,15 @@ export const onDeleteReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
         }
+        category
+        username
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
       }
       user {
         id
@@ -256,9 +446,31 @@ export const onDeleteReviews = /* GraphQL */ `
         email
         reviews {
           nextToken
+          startedAt
+        }
+        firstname
+        lastname
+        Business {
+          id
+          name
+          rating
+          location
+          account
+          email
+          category
+          username
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        userBusinessId
       }
       comments {
         items {
@@ -266,12 +478,19 @@ export const onDeleteReviews = /* GraphQL */ `
           content
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
           reviewsCommentsId
         }
         nextToken
+        startedAt
       }
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       businessReviewsId
       userReviewsId
     }
@@ -291,27 +510,45 @@ export const onCreateComment = /* GraphQL */ `
           location
           account
           email
+          category
+          username
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         user {
           id
           username
           email
+          firstname
+          lastname
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+          userBusinessId
         }
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         businessReviewsId
         userReviewsId
       }
       content
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       reviewsCommentsId
     }
   }
@@ -330,27 +567,45 @@ export const onUpdateComment = /* GraphQL */ `
           location
           account
           email
+          category
+          username
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         user {
           id
           username
           email
+          firstname
+          lastname
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+          userBusinessId
         }
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         businessReviewsId
         userReviewsId
       }
       content
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       reviewsCommentsId
     }
   }
@@ -369,61 +624,46 @@ export const onDeleteComment = /* GraphQL */ `
           location
           account
           email
+          category
+          username
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
         }
         user {
           id
           username
           email
+          firstname
+          lastname
           createdAt
           updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+          userBusinessId
         }
         comments {
           nextToken
+          startedAt
         }
         createdAt
         updatedAt
+        _version
+        _deleted
+        _lastChangedAt
         businessReviewsId
         userReviewsId
       }
       content
       createdAt
       updatedAt
+      _version
+      _deleted
+      _lastChangedAt
       reviewsCommentsId
-    }
-  }
-`;
-export const onCreateTest = /* GraphQL */ `
-  subscription OnCreateTest($filter: ModelSubscriptionTestFilterInput) {
-    onCreateTest(filter: $filter) {
-      id
-      name
-      desc
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateTest = /* GraphQL */ `
-  subscription OnUpdateTest($filter: ModelSubscriptionTestFilterInput) {
-    onUpdateTest(filter: $filter) {
-      id
-      name
-      desc
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteTest = /* GraphQL */ `
-  subscription OnDeleteTest($filter: ModelSubscriptionTestFilterInput) {
-    onDeleteTest(filter: $filter) {
-      id
-      name
-      desc
-      createdAt
-      updatedAt
     }
   }
 `;

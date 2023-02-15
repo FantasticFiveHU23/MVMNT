@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/LoginButton.css';
 import '../styles/ModalPopUp.css';
 import ModalPopUp from './ModalPopUp';
@@ -8,34 +8,60 @@ import ModalPopUp from './ModalPopUp';
 // import '../styles/ModalLogin.css';
 // import '../styles/ModalSignup.css';
 
-class LoginButton extends React.Component {
-  state = {
-    showModal: false,
-  };
+// class LoginButton extends React.Component {
+//   state = {
+//     showModal: false,
+//   };
+//
+//   toggleModal = () => {
+//     this.setState({
+//       showModal: !this.state.showModal,
+//     });
+//   };
+//
+//   render() {
+//     return (
+//       <React.Fragment>
+//         <button className="login-button" onClick={this.toggleModal}>
+//           Log In
+//         </button>
+//         {this.state.showModal ? (
+//           <div className="modal">
+//             <span className="close-button" onClick={this.toggleModal}>
+//               &times;
+//             </span>
+//             <ModalPopUp />
+//           </div>
+//         ) : null}
+//       </React.Fragment>
+//     );
+//   }
+// }
 
-  toggleModal = () => {
-    this.setState({
-      showModal: !this.state.showModal,
-    });
-  };
+export function LoginButton() {
+  const [showModal, setShowModal] = useState(false)
 
-  render() {
+  function toggleModal() {
+    setShowModal(!showModal)
+  }
+
+  const Modal = () => {
     return (
-      <React.Fragment>
-        <button className="login-button" onClick={this.toggleModal}>
-          Log In
-        </button>
-        {this.state.showModal ? (
-          <div className="modal">
-            <span className="close-button" onClick={this.toggleModal}>
+        <div className="modal">
+            <span className="close-button" onClick={toggleModal}>
               &times;
             </span>
-            <ModalPopUp />
-          </div>
-        ) : null}
-      </React.Fragment>
-    );
+          <ModalPopUp />
+        </div>
+    )
   }
-}
 
-export default LoginButton;
+  return (
+      <React.Fragment>
+        <button className="login-button" onClick={toggleModal}>
+          Log In
+        </button>
+        {showModal? <Modal/> : null}
+      </React.Fragment>
+  )
+}

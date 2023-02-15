@@ -6,6 +6,7 @@ import { FilterHeader, Checkboxes, Star } from "../components/Filter";
 import businesses from "../components/BusinessInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
+import { Footer } from "../components/Footer";
 
 export function HomePage({ isLoggedIn }) {
   // eslint-disable-next-line
@@ -22,12 +23,12 @@ export function HomePage({ isLoggedIn }) {
   return (
     <div>
       <div className="page-content">
-        <Header isLoggedIn={isLoggedIn} />
         <SearchBar />
         <FilterHeader />
         <Checkboxes />
         <Star />
-        <BusinessList businesses={businesses} />
+        <BusinessList businesses={businesses}/>
+        <Footer/>
       </div>
     </div>
   );

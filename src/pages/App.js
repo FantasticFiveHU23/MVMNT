@@ -5,16 +5,23 @@ import {HomePage} from './HomePage';
 // eslint-disable-next-line
 import { Dashboard } from '../components/Dashboardbutton';
 import { Footer } from '../components/Footer';
-
+import Businesspage from './Businesspage';
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import Header from "../components/Header";
+import { Link } from 'react-router-dom';
 function App() {
   // eslint-disable-next-line
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <div className="App">
-      <HomePage isLoggedIn={isLoggedIn} />
-      {/* <Dashboard isLoggedIn={isLoggedIn}/> */}
-      <Footer />
+      <Header />
+      <Router>
+      <Routes>
+      <Route path="/" element={<HomePage isLoggedIn={isLoggedIn} />} />
+      <Route path = "/Businesspage" element={<Businesspage/>}/>
+      </Routes>
+      </Router>
     </div>
 
   );

@@ -1,3 +1,4 @@
+
 button {
     font-family: 'Lato';
     font-style: normal;
@@ -13,50 +14,39 @@ button {
     width: 300px;
     height: 200px;
     background-color: #F6C28B;
-}
+   
 
+}
 #container {
     margin: 20px auto;
-    margin-top: 70px;
-    margin-bottom: 30px;
-    display:grid;
-    height: 100vh;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row: auto;
-    column-gap: 300px;
-    justify-content: center;
-
-    grid-row-gap: 20px;
-}
-
-
-
-
-/* #container {
-    margin: 20px auto;
     display:grid;
     grid-template-columns: 200px 200px;
-    grid-row: auto;
+    grid-row: auto auto;
     column-gap: 300px;
     justify-content: center;
 
     grid-row-gap: 20px;
  
    
-} */
+}
 
-/* h1{
+ 
+
+  
+
+
+h1{
         justify-content: center;
         
-} */
-/* #container-2{
+}
+#container-2{
     display:flex;
     justify-content: center;
     align-items: right;
     align-items: center;
     flex-direction: column;
+    
    
     
     
-} */
+}

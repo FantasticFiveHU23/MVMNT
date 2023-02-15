@@ -1,7 +1,7 @@
 type Business @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
-  rating: Int
+  rating: Float
   location: String!
   account: ID
   email: String!
@@ -15,6 +15,9 @@ type User @model @auth(rules: [{allow: public}]) {
   username: String!
   email: String!
   reviews: [Reviews] @hasMany
+  firstname: String!
+  lastname: String!
+  Business: Business @hasOne
 }
 
 type Reviews @model @auth(rules: [{allow: public}]) {
@@ -29,4 +32,5 @@ type Comment @model @auth(rules: [{allow: public}]) {
   id: ID!
   post: Reviews @belongsTo
   content: String!
-} 
+}
+ 

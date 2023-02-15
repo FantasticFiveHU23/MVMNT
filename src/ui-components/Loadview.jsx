@@ -59,20 +59,6 @@ export default function Loadview(props) {
           objectFit="cover"
           {...getOverrideProps(overrides, "logo")}
         ></Image>
-        <View
-          width="100px"
-          height="100px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          overflow="hidden"
-          position="absolute"
-          top="257px"
-          left="544px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 1")}
-        ></View>
       </View>
     </View>
   );

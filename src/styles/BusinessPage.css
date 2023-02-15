@@ -1,0 +1,23 @@
+.page-content {
+    text-align: center;
+    background-color: #FCD7AD;
+    min-height: 50vh;
+    min-width: 100vw;
+  }
+  *{
+    margin: 0;
+    padding:0;
+  }
+  h2{
+  
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    
+  }

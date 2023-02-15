@@ -1,14 +1,23 @@
 import '../styles/App.css';
 import React, { useState } from 'react';
-import HomePage from './HomePage';
-
+import {HomePage} from './HomePage';
+import Businesspage from './Businesspage';
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import {Header} from "../components/Header";
+import { Link } from 'react-router-dom';
 function App() {
   // eslint-disable-next-line
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <div className="App">
-      <HomePage isLoggedIn={isLoggedIn} />
+      <Header />
+      <Router>
+      <Routes>
+      <Route path="/" element={<HomePage isLoggedIn={isLoggedIn} />} />
+      <Route path = "/Businesspage" element={<Businesspage/>}/>
+      </Routes>
+      </Router>
     </div>
   );
 }

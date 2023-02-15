@@ -10,6 +10,7 @@ const BusinessField = ({
   bio,
 }) => {
   return (
+    
     <div className="business-container">
       <div className="business-field">
         <img
@@ -35,4 +36,3 @@ const BusinessField = ({
 };
 export default BusinessField;
 
-// <p className="distance">Distance: {distance}</p>

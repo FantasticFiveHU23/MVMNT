@@ -33,14 +33,12 @@ ul{
 }
 
 .box{
- 
-
   height: 120px;
   width: 92px;
   background-color: rgba(251, 246,243, 0.67);
   color: #fff;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 10
 }
 
@@ -66,6 +64,9 @@ ul{
 .stars i.active {
   color: #ff9c1a;
 }
+
+
+
 .checkbox-hidden{
   
       position: absolute;

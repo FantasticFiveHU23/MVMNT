@@ -12,10 +12,10 @@ export declare type UserTypeSelectionOverridesProps = {
     UserTypeSelection?: PrimitiveOverrideProps<ViewProps>;
     staticButtonBusiness?: PrimitiveOverrideProps<ViewProps>;
     selectBusinessText?: PrimitiveOverrideProps<TextProps>;
-    selectCustomerBubble7611?: PrimitiveOverrideProps<IconProps>;
+    selectCustomerBubble382202?: PrimitiveOverrideProps<IconProps>;
     staticButtonCustomer?: PrimitiveOverrideProps<ViewProps>;
     selectCustomerText?: PrimitiveOverrideProps<TextProps>;
-    selectCustomerBubble766?: PrimitiveOverrideProps<IconProps>;
+    selectCustomerBubble382205?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type UserTypeSelectionProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: UserTypeSelectionOverridesProps | undefined | null;

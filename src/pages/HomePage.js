@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import {Header} from "../components/Header";
 import {SearchBar} from "../components/SearchBar";
 import { BusinessList } from "../components/BusinessList";
-import {Footer} from "../components/Footer";
 import { FilterHeader, Checkboxes, Star } from "../components/Filter";
 import businesses from "../components/BusinessInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
+import { Footer } from "../components/Footer";
 
 export function HomePage({ isLoggedIn }) {
   // eslint-disable-next-line
@@ -23,14 +23,13 @@ export function HomePage({ isLoggedIn }) {
   return (
     <div>
       <div className="page-content">
-       
         <SearchBar />
         <FilterHeader />
         <Checkboxes />
         <Star />
-        <BusinessList businesses={businesses} />
+        <BusinessList businesses={businesses}/>
+        <Footer/>
       </div>
-      <Footer />
     </div>
   );
 }

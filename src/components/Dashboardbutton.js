@@ -1,23 +1,20 @@
 import React from "react";
-import "../styles/Dashboardbutton.css"
-const Dashboard = () => {
+import "../styles/Dashboardbutton.css";
+import { Header } from "./Header";
 
-    return (
+export const Dashboard = ({ isLoggedIn }) => {
+  return (
+    <>
+      <div>
+        <Header isLoggedIn={isLoggedIn} />
+      </div>
+      <div id="container">
+        <button>Business Dashboard</button>
+        <button>View Your Business</button>
 
-        
-        <><div id="container">
-
-            <button>Business Dashboard</button>
-            <button>View Your Business</button>
-     
-    
-                <button>Product View</button>
-                <button>Business Analytics</button>
-
-
-            </div>
-            </>
-
-    );
+        <button>Product View</button>
+        <button>Business Analytics</button>
+      </div>
+    </>
+  );
 };
-export default Dashboard;

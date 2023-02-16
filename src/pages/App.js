@@ -1,6 +1,9 @@
 import '../styles/App.css';
 import React, { useState } from 'react';
+// eslint-disable-next-line
 import {HomePage} from './HomePage';
+import { Dashboard } from '../components/Dashboardbutton';
+import { Footer } from '../components/Footer';
 import Businesspage from './Businesspage';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import {Header} from "../components/Header";
@@ -19,6 +22,7 @@ function App() {
       </Routes>
       </Router>
     </div>
+
   );
 }
 // Test 2

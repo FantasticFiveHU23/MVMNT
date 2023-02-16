@@ -34,11 +34,17 @@ class ModalSignUp extends Component {
         <div>
           <p className="signup-or-login-label">Or</p>
         </div>
-        <div>
-          <button className="signup-social-media-button-google"></button>
-          <button className="signup-social-media-button-apple"></button>
-          <button className="signup-social-media-button-facebook"></button>
+        <div className="radio-container">
+          <label>
+            <input type="radio" name="account-type" className="customer-signup" value="customer" /> 
+            I am a Customer
+          </label>
+          <label>
+            <input type="radio" name="account-type" className="business-signup" value="business" /> 
+            I am a Business
+          </label>
         </div>
+
       </form>
     );
   }

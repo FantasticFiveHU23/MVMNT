@@ -2,7 +2,6 @@ import '../styles/App.css';
 import React, { useState } from 'react';
 // eslint-disable-next-line
 import {HomePage} from './HomePage';
-// eslint-disable-next-line
 import { Dashboard } from '../components/Dashboardbutton';
 import { Footer } from '../components/Footer';
 import Businesspage from './Businesspage';

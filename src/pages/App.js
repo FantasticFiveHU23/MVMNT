@@ -4,6 +4,7 @@ import {HomePage} from './HomePage';
 import Businesspage from './Businesspage';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import {Header} from "../components/Header";
+import { FindBusinesses } from './FindBusinesses';
 // import { Link } from 'react-router-dom';
 
 function App() {
@@ -13,15 +14,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      
       <Router>
       <Routes>
       <Route path="/" element={<HomePage isLoggedIn={isLoggedIn} />} />
       <Route path = "/Businesspage" element={<Businesspage/>}/>
+      <Route path="/search" element={<FindBusinesses />} />
       </Routes>
       </Router>
     </div>
-
   );
 }
 // Test 2

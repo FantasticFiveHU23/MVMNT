@@ -6,7 +6,6 @@ import { FilterHeader, Checkboxes, Star } from "../components/Filters/Filter";
 import businesses from "../components/BusinessListHome/BusinessInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
-import { Footer } from "../components/Footer";
 
 export function HomePage({ isLoggedIn }) {
   // eslint-disable-next-line

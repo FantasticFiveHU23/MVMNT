@@ -12,6 +12,7 @@ class Businesspage extends React.Component {
     return (
       <div>
         <div className="page-content">
+        
          <h2>[Business Name]</h2>
         
           

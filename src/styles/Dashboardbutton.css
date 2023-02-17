@@ -1,5 +1,5 @@
 
-button {
+#business {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -11,9 +11,10 @@ button {
     margin: 5px;
     border: 1px solid black;
     border-radius:10px;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 100px;
     background-color: #F6C28B;
+    box-shadow: 8px 5px 5px black;
    
 
 }
@@ -26,9 +27,17 @@ button {
     justify-content: center;
 
     grid-row-gap: 20px;
+    
  
    
 }
+
+#business:active {
+    background-color: #d3a26d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 
  
 

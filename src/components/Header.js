@@ -10,7 +10,7 @@ export function Header(props) {
       <img href="/home-page" className="logo-img" src={logo} alt="logo" />
       <a href='/'>Home</a>
       <a href="/local-finds">Local Finds</a>
-      <a href="/top-sellers">Top Sellers</a>
+      <a href="/top-sellers" onClick={(e) => { e.preventDefault(); window.location.href='/top-sellers' }}>Top Sellers</a>
       <a href="/categories">Categories</a>
       <a href="/search" onClick={(e) => { e.preventDefault(); window.location.href='/search' }}>Search</a>
       {props.isLoggedIn ? <ProfilePicture /> : <LoginButton />}

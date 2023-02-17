@@ -29,6 +29,7 @@
     background-color: transparent;
     border: 0;
     content: "";
+
     height: 20px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -123,28 +124,9 @@
     vertical-align: middle;
   }
 
-  .radio-container input[type="radio"] {
-    margin-right: 5px; /* adjust as needed */
-  }
 
-  .radio-container input[type="radio"]:checked::before {
-    background-color: #D9D9D9;
-  }
-  
-  
-  
-  .radio-container label {
-    display: block;
-    margin-bottom: 10px;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    text-align: left;
-  }
-  
-
-
-/* .signup-social-media-button-google {
-    background-image: url(../images/google-logo.png);
+.signup-social-media-button-google {
+    background-image: url(../../images/google-logo.png);
     background-size: cover;
     background-color: transparent;
     width: 50px;
@@ -155,7 +137,7 @@
     cursor: pointer;
 }
 .signup-social-media-button-apple{
-    background-image: url(../images/apple-logo.png);
+    background-image: url(../../images/apple-logo.png);
     background-size: cover;
     background-color: transparent;
     width: 50px;
@@ -166,7 +148,7 @@
     cursor: pointer;
 }
 .signup-social-media-button-facebook {
-    background-image: url(../images/facebook-logo.png);
+    background-image: url(../../images/facebook-logo.png);
     background-size: cover;
     background-color: transparent;
     width: 50px;
@@ -175,4 +157,4 @@
     margin-right:30px;
     border: 0;
     cursor: pointer;
-} */
+}

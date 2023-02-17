@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/BusinessField.css";
+import "../../styles/BusinessListHome/BusinessField.css";
 
 const BusinessField = ({
   businessName,
@@ -14,7 +14,7 @@ const BusinessField = ({
     <div className="business-container">
       <div className="business-field">
         <img
-          src={require("../images/pfpPlaceholder.png")}
+          src={require("../../images/pfpPlaceholder.png")}
           alt="profile"
           className="business-pfp"
         />

@@ -1,8 +1,8 @@
 import React from "react";
-import ModalLogin from "./Modal/ModalLogin";
-import ModalSignUp from "./Modal/ModalSignUp";
-import "../styles/ModalLogin.css";
-import "../styles/ModalSignup.css";
+import ModalLogin from "./ModalLogin";
+import ModalSignUp from "./ModalSignUp";
+import "../../styles/Modal/ModalLogin.css";
+import "../../styles/Modal/ModalSignup.css";
 
 
 export function ModalPopUp(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 import BusinessField from "./BusinessField";
-import "../styles/ListStyle.css";
+import "../../styles/BusinessListHome/ListStyle.css";
 
 export function BusinessList({ businesses }) {
   return (

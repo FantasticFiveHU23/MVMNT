@@ -28,7 +28,6 @@
     background-color: transparent;
     border: 0;
     content: "";
-    
     height: 20px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
@@ -127,7 +126,7 @@
   
 
 .login-social-media-button-google {
-    background-image: url(../images/google-logo.png);
+    background-image: url(../../images/google-logo.png);
     background-size: cover;
     background-color: transparent;
     width: 50px;
@@ -138,7 +137,7 @@
     cursor: pointer;
 }
 .login-social-media-button-apple{
-    background-image: url(../images/apple-logo.png);
+    background-image: url(../../images/apple-logo.png);
     background-size: cover;
     background-color: transparent;
     width: 50px;
@@ -149,7 +148,7 @@
     cursor: pointer;
 }
 .login-social-media-button-facebook {
-    background-image: url(../images/facebook-logo.png);
+    background-image: url(../../images/facebook-logo.png);
     background-size: cover;
     background-color: transparent;
     width: 50px;

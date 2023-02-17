@@ -30,6 +30,7 @@ export const createBusiness = /* GraphQL */ `
       }
       category
       username
+      bio
       createdAt
       updatedAt
       _version
@@ -67,6 +68,7 @@ export const updateBusiness = /* GraphQL */ `
       }
       category
       username
+      bio
       createdAt
       updatedAt
       _version
@@ -104,6 +106,7 @@ export const deleteBusiness = /* GraphQL */ `
       }
       category
       username
+      bio
       createdAt
       updatedAt
       _version
@@ -151,6 +154,7 @@ export const createUser = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -205,6 +209,7 @@ export const updateUser = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -259,6 +264,7 @@ export const deleteUser = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -295,6 +301,7 @@ export const createReviews = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -320,6 +327,7 @@ export const createReviews = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -378,6 +386,7 @@ export const updateReviews = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -403,6 +412,7 @@ export const updateReviews = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -461,6 +471,7 @@ export const deleteReviews = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -486,6 +497,7 @@ export const deleteReviews = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -542,6 +554,7 @@ export const createComment = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -602,6 +615,7 @@ export const updateComment = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -662,6 +676,7 @@ export const deleteComment = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version

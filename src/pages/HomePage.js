@@ -9,16 +9,17 @@ import {API, graphqlOperation} from 'aws-amplify';
 import {listBusinesses} from '../graphql/queries.js'
 
 export function HomePage({ isLoggedIn }) {
-  const [businessCollection, setBusinessCollection] = useState()
+    const [businessCollection, setBusinessCollection] = useState()
 
-useEffect(() => {
-    const fetchBusinessCollection = async() => {
-        return API.graphql(graphqlOperation(listBusinesses))
-    }
-    const collectionData = fetchBusinessCollection()
-    console.log(collectionData)
-    setBusinessCollection(collectionData)
-}, [])
+    useEffect(() => {
+        const fetchBusinessCollection = async()  => {
+            const data = await API.graphql(graphqlOperation(listBusinesses))
+            if (data) {
+                setBusinessCollection(data.data.listBusinesses.items)
+            }
+        }
+        fetchBusinessCollection()
+    }, [])
 
     useEffect(() => {
         if (businessCollection) {
@@ -34,7 +35,7 @@ useEffect(() => {
              <FilterHeader/>
              <Checkboxes/>
              <Star/>
-             {/*<BusinessList businesses={businessCollection}/>*/}
+             <BusinessList businesses={businessCollection}/>
           </div>
           <Footer/>
       </div>

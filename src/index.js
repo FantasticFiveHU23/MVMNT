@@ -6,6 +6,9 @@ import './styles/App.css';
 import { HomePage }from "./pages/HomePage";
 import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports';
+import {Header} from "./components/Header";
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
+import {BusinessPage} from "./pages/BusinessPage";
 
 Amplify.configure(awsExports);
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -15,13 +18,20 @@ const Main = () => {
 
     return (
         <div className="App">
-            <HomePage isLoggedIn={isLoggedIn} />
+            <Router>
+                <Routes>
+                    <Route path="/" element={
+                        <HomePage
+                            isLoggedIn={isLoggedIn}
+                        />}
+                    />
+                    <Route path = "/Businesspage" element={<BusinessPage/>}/>
+                </Routes>
+            </Router>
         </div>
     )
 }
 
 root.render(
-  <React.StrictMode>
-      <Main/>
-  </React.StrictMode>
+    <Main/>
 );

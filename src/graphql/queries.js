@@ -27,6 +27,7 @@ export const getBusiness = /* GraphQL */ `
       }
       category
       username
+      bio
       createdAt
       updatedAt
       _version
@@ -55,6 +56,7 @@ export const listBusinesses = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -92,6 +94,7 @@ export const syncBusinesses = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -139,6 +142,7 @@ export const getUser = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -180,6 +184,7 @@ export const listUsers = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -230,6 +235,7 @@ export const syncUsers = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -266,6 +272,7 @@ export const getReviews = /* GraphQL */ `
         }
         category
         username
+        bio
         createdAt
         updatedAt
         _version
@@ -291,6 +298,7 @@ export const getReviews = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -347,6 +355,7 @@ export const listReviews = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -408,6 +417,7 @@ export const syncReviews = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version
@@ -460,6 +470,7 @@ export const getComment = /* GraphQL */ `
           email
           category
           username
+          bio
           createdAt
           updatedAt
           _version

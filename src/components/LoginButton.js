@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/LoginButton.css";
-import "../styles/ModalPopUp.css";
-import {ModalPopUp} from "./ModalPopUp";
+import "../styles/Modal/ModalPopUp.css";
+
+import { ModalPopUp } from "./Modal/ModalPopUp";
 
 export function LoginButton() {
   const [showModal, setShowModal] = React.useState(false);

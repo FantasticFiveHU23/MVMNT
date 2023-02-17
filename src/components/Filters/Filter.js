@@ -2,7 +2,7 @@
 // import React, { useState } from "react";
 import PropTypes from 'prop-types';
 
-import "../styles/Filter.css";
+import "../../styles/Filters/Filter.css";
 // Title for Filters
 const FilterHeader = ({ filter_title }) => {
   return (

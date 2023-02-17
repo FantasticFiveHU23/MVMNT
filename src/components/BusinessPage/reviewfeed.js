@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/reviewfeed.css"
+import "../../styles/BusinessPage/reviewfeed.css"
 const review = () => {
 
     return (

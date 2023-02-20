@@ -18,7 +18,6 @@ class Businesspage extends React.Component {
           <Review/>
    
         </div>
-        <Footer/>
       </div>
     );
   }

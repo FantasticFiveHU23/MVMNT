@@ -27,7 +27,6 @@ export function HomePage({ isLoggedIn }) {
         <Checkboxes />
         <Star />
         <BusinessList businesses={businesses}/>
-        <Footer/>
       </div>
     </div>
   );

@@ -21,7 +21,6 @@ export function TopSellers({ isLoggedIn }) {
     <div>
       <div className="page-content">
         <TopSellersList businesses={businesses}/>
-        <Footer/>
       </div>
     </div>
   );

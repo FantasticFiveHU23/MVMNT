@@ -3,12 +3,13 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-auto-rows: 1fr;
-    gap: 150px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
     padding: 50px;
     margin: auto;
     max-width: 1200px;
-    margin-top: 15vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
   

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import businesses from "../components/TopSellersPage/TopSellersInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
 import { CategoriesContainer } from "../components/CategoriesPage/CategoriesContainer";

@@ -9,7 +9,6 @@ import { TopSellers } from "./TopSellers";
 import { Categories } from "./Categories";
 import { Footer } from "../components/Footer";
 import { LocalFinds } from './LocalFinds';
-import { Footer } from '../components/Footer';
 // import { Link } from 'react-router-dom';
 
 function App() {

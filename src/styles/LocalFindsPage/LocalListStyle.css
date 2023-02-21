@@ -1,0 +1,16 @@
+.local-business-list-container{
+    height: 620px;
+    overflow: auto;
+    margin-top: -675px;
+    margin-left: 715px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    background-color: #FCD7AD;
+  }
+
+  .local-business-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 5px;
+    }

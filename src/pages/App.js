@@ -8,12 +8,14 @@ import { FindBusinesses } from "./FindBusinesses";
 import { TopSellers } from "./TopSellers";
 import { Categories } from "./Categories";
 import { Footer } from "../components/Footer";
+import { LocalFinds } from './LocalFinds';
+import { Footer } from '../components/Footer';
 // import { Link } from 'react-router-dom';
 
 function App() {
   // eslint-disable-next-line
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+  
   return (
     <div className="App">
       <Header />
@@ -24,7 +26,8 @@ function App() {
           <Route path="/search" element={<FindBusinesses />} />
           <Route path="/top-sellers" element={<TopSellers />} />
           <Route path="/categories" element={<Categories />} />
-        </Routes>
+        <Route path="/local-finds" element={<LocalFinds location="Washington D.C" />} />
+      </Routes>
       </Router>
       <Footer />
     </div>

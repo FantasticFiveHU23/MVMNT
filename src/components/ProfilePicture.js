@@ -7,7 +7,7 @@ export function ProfilePicture() {
       <img
         src={require("../images/pfpPlaceholder.png")}
         alt="profile"
-        className="profile-picture"
+        className="header-pfp customer-profile-pfp"
       />
     </div>
   );

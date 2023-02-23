@@ -1,3 +1,9 @@
+type Category @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  category_name: String!
+  Businesses: [Business] @manyToMany(relationName: "CategoryBusiness")
+}
+
 type Business @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
@@ -8,29 +14,38 @@ type Business @model @auth(rules: [{allow: public}]) {
   reviews: [Reviews] @hasMany
   category: String
   username: String!
+  bio: String
+  categorys: [Category] @manyToMany(relationName: "CategoryBusiness")
 }
 
 type User @model @auth(rules: [{allow: public}]) {
   id: ID!
   username: String!
   email: String!
-  reviews: [Reviews] @hasMany
   firstname: String!
   lastname: String!
-  Business: Business @hasOne
+  reviews: [String]
+  Reviews: [Reviews] @hasMany(indexName: "byUser", fields: ["id"])
+  Comments: [Comment] @hasMany(indexName: "byUser", fields: ["id"])
 }
 
 type Reviews @model @auth(rules: [{allow: public}]) {
   id: ID!
   title: String!
-  business: Business @belongsTo
-  user: User @belongsTo
-  comments: [Comment] @hasMany
+  business_review: Business @belongsTo
+  review_replies: [Comment] @hasMany(indexName: "byReviews", fields: ["id"])
+  content: String!
+  datePublished: AWSDateTime
+  replies: [ID]
+  userID: ID! @index(name: "byUser")
 }
 
 type Comment @model @auth(rules: [{allow: public}]) {
   id: ID!
-  post: Reviews @belongsTo
+  reply: Reviews @belongsTo(fields: ["reviewsID"])
   content: String!
+  reviewsID: ID! @index(name: "byReviews")
+  datePublished: AWSDateTime!
+  userID: ID! @index(name: "byUser")
 }
  

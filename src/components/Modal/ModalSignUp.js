@@ -1,5 +1,24 @@
 import React, { Component } from "react";
+import { Auth } from 'aws-amplify';
 
+async function signUp() {
+  try {
+      alert("signUp function running");
+      const { user } = await Auth.signUp({
+          username: document.getElementById('username').value,
+          password: document.getElementById('password').value,
+          attributes: {
+              email: document.getElementById('email').value 
+          },
+          autoSignIn: { // optional - enables auto sign in after user is confirmed
+              enabled: true,
+          }
+      });
+      console.log(user);
+  } catch (error) {
+      console.log('error signing up:', error);
+  }
+}
 class ModalSignUp extends Component {
   render() {
     const { handleShowLogin } = this.props;
@@ -28,12 +47,6 @@ class ModalSignUp extends Component {
             required
           />
         </div>
-        <div>
-          <input className="signup-login" type="submit" value="Sign Up" />
-        </div>
-        <div>
-          <p className="signup-or-login-label">Or</p>
-        </div>
         <div className="radio-container">
           <label>
             <input type="radio" name="account-type" className="customer-signup" value="customer" /> 
@@ -43,6 +56,12 @@ class ModalSignUp extends Component {
             <input type="radio" name="account-type" className="business-signup" value="business" /> 
             I am a Business
           </label>
+        </div>
+        <div>
+          <input className="signup-login" type="button" value="Sign Up" onClick={signUp} />
+        </div>
+        <div>
+          <p className="signup-or-login-label">Or</p>
         </div>
 
       </form>

@@ -1,33 +1,43 @@
-import React, { useState, useEffect } from "react";
-import {SearchBar} from "../components/SearchBar";
-import { BusinessList } from "../components/BusinessListHome/BusinessList";
-import {Footer} from "../components/Footer";
-import { FilterHeader, Checkboxes, Star } from "../components/Filters/Filter";
-import businesses from "../components/BusinessListHome/BusinessInfoEx";
-import { API, graphqlOperation } from "aws-amplify";
-import { listBusinesses } from "../graphql/queries.js";
+import React, {useEffect, useState} from "react";
+import { Header } from "../components/Header";
+import SearchBar from "../components/SearchBar";
+import BusinessList from "../components/BusinessList";
+import Footer from "../components/Footer";
+import {Checkboxes, FilterHeader, Star} from "../components/Filter";
+import businesses from "../components/BusinessInfoEx";
+import {API, graphqlOperation} from 'aws-amplify';
+import {listBusinesses} from '../graphql/queries.js'
 
 export function HomePage({ isLoggedIn }) {
-  // eslint-disable-next-line
-  const [business, setBusiness] = useState([]);
+    const [businessCollection, setBusinessCollection] = useState()
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const businessData = await API.graphql(graphqlOperation(listBusinesses));
-      setBusiness(businessData.data.listBusinesses.items);
-    };
-    fetchData();
-  }, []);
+    useEffect(() => {
+        const fetchBusinessCollection = async()  => {
+            const data = await API.graphql(graphqlOperation(listBusinesses))
+            if (data) {
+                setBusinessCollection(data.data.listBusinesses.items)
+            }
+        }
+        fetchBusinessCollection()
+    }, [])
+
+    useEffect(() => {
+        if (businessCollection) {
+            console.log(businessCollection)
+        }
+    }, [businessCollection])
 
   return (
-    <div>
-      <div className="page-content">
-        <SearchBar />
-        <FilterHeader />
-        <Checkboxes />
-        <Star />
-        <BusinessList businesses={businesses}/>
+      <div>
+          <div className="page-content">
+             <Header isLoggedIn={isLoggedIn} />
+             <SearchBar />
+             <FilterHeader/>
+             <Checkboxes/>
+             <Star/>
+             <BusinessList businesses={businessCollection}/>
+          </div>
+          <Footer/>
       </div>
-    </div>
-  );
+  )
 }

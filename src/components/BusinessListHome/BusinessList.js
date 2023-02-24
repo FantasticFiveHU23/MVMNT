@@ -9,9 +9,9 @@ export function BusinessList({ businesses }) {
         {businesses &&
           businesses.map((business) => (
             <BusinessField
-              key={business.businessId}
-              businessName={business.businessName}
-              businessId={business.businessId}
+              key={business.username}
+              businessName={business.name}
+              businessId={business.username}
               category={business.category}
               rating={business.rating}
               distance={business.distance}

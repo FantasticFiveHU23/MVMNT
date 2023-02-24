@@ -88,7 +88,7 @@ export default function UserTypeSelection(props) {
           bottom="21.43%"
           left="0%"
           right="96.88%"
-          {...getOverrideProps(overrides, "selectCustomerBubble7611")}
+          {...getOverrideProps(overrides, "selectCustomerBubble382202")}
         ></Icon>
       </View>
       <View
@@ -156,7 +156,7 @@ export default function UserTypeSelection(props) {
           bottom="21.43%"
           left="0%"
           right="93.88%"
-          {...getOverrideProps(overrides, "selectCustomerBubble766")}
+          {...getOverrideProps(overrides, "selectCustomerBubble382205")}
         ></Icon>
       </View>
     </View>

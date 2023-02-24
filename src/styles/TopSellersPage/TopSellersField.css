@@ -1,0 +1,134 @@
+
+.top-sellers-business-container{
+  display: flex;
+  position: relative;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: -20px;  /* height of search bar + desired margin */
+}
+
+
+.top-sellers-business-field {
+  display: flex;
+  position: relative;
+  flex: 0 0 auto;
+  width: 630px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background: #fbf6f3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  overflow: hidden;
+}
+
+.top-sellers-business-pfp {
+  border-radius: 10px;
+  
+  position: relative;
+  width: 95px;
+  height: 78px;
+
+  top: -14.5px;
+  left: -15px;
+}
+
+.top-sellers-business-header{
+display: inline-flex;
+justify-content: left;
+align-items: center;
+position: relative;
+top: -105px;
+left: 85px;
+width: 800px;
+height: 100%;
+/* padding-right: 10px; */
+}
+/**/
+.top-sellers-business-name {
+  padding-left: 10px;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.top-sellers-business-id{
+  padding-left: 10px;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.top-sellers-info-container {
+  display: inline-flex;
+  justify-content: space-between;
+
+  position: relative;
+  top: -125px;
+  left: 75px;
+  width: 500px;
+  height: 100%;
+}
+
+
+.top-sellers-category, .top-sellers-rating, .top-sellers-distance {
+  width: calc(33.33% - 5px/3); 
+  height: 20px;
+  border-right: 1.5px solid black;
+  padding: 5px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-sizing: border-box;
+
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
+}
+.top-sellers-category{
+  padding-right: 40px;
+  font-family: 'Lato', sans-serif;
+}
+.top-sellers-distance {
+  border-right: none; /* remove border for last element */
+  font-family: 'Lato', sans-serif;
+}
+.top-sellers-bio-container{
+  display: flex;
+  width: 534px;
+  max-height: 90px;
+  max-width: 470px;
+  position: relative; 
+  
+
+  top: -125px;
+  left: 95px;
+}
+
+/*
+top: -175px;
+left: 175px;
+width: 500px;
+height: 100%; */
+
+
+.top-sellers-bio{
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

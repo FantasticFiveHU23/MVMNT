@@ -1,0 +1,15 @@
+.find-business-list-container{
+  height: 800px;
+  
+  overflow: auto;
+  margin-top: 120px;
+  margin-left: 334px;
+  margin-right: 306px;
+  background-color: #FCD7AD;
+}
+.find-business-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+  }

@@ -6,10 +6,14 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useAuthSignOutAction,
+} from "@aws-amplify/ui-react/internal";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Usercansignintotheiraccount(props) {
   const { overrides, ...rest } = props;
+  const loginButtonShapeOnClick = useAuthSignOutAction({ global: false });
   return (
     <View
       width="640px"
@@ -69,6 +73,9 @@ export default function Usercansignintotheiraccount(props) {
           borderRadius="5px"
           padding="0px 0px 0px 0px"
           backgroundColor="rgba(82,150,165,1)"
+          onClick={() => {
+            loginButtonShapeOnClick();
+          }}
           {...getOverrideProps(overrides, "loginButtonShape")}
         ></View>
         <Text

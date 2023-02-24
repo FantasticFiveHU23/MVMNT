@@ -7,7 +7,7 @@ export function ProfileInfo(){
 
     return(
         <div className="profile-info-container">
-            <ProfilePicture />
+            <ProfilePicture className="profile-page-pfp"/>
         </div>
     )
 };

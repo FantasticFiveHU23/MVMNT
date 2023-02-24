@@ -1,4 +1,7 @@
 .profile-info-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
     position: absolute;
     top: 150px;
     left: 50px;

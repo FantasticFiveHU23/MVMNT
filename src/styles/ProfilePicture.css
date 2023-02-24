@@ -1,9 +1,37 @@
-.header-pfp {
-    border-radius: 50%; /* Makes the element a circle */
-    width: 50px; /* Adjusts the width of the image */
-    height: 50px; /* Adjusts the height of the image */
-    position: absolute;
-    top: 17px;
-    right: 20px;
-  }
+/* .profile-picture-container {
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  overflow: hidden;
+} */
+.profile-picture-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resizes the image while maintaining aspect ratio */
+  object-position: center center; /* Centers the image */
+}
 
+
+.header-pfp{
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.profile-page-pfp {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 5px;
+  overflow: hidden;
+}

@@ -3,7 +3,7 @@ import '../styles/Header.css';
 import { LoginButton } from "../components/LoginButton";
 import logo from "../images/logo.png";
 import { ProfilePicture } from "../components/ProfilePicture";
-
+import '../styles/ProfilePicture.css'
 export function Header(props) {
   return (
     <nav>
@@ -15,7 +15,7 @@ export function Header(props) {
       <a href="/search" onClick={(e) => { e.preventDefault(); window.location.href='/search' }}>Search</a>
       {props.isLoggedIn ? (
         <a href="/profile-page">
-          <ProfilePicture />
+          <ProfilePicture className="header-pfp" />
         </a>
       ) : (
         <LoginButton />

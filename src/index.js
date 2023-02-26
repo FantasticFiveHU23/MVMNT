@@ -18,7 +18,10 @@ const Main = () => {
 
     return (
         <div className="App">
+            <Header/>
+           
             <Router>
+                 
                 <Routes>
                     <Route path="/" element={
                         <HomePage

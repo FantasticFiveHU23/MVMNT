@@ -14,10 +14,12 @@ async function signUp() {
               enabled: true,
           }
       });
+      console.log("SignUp Function successfully called");
       console.log(user);
   } catch (error) {
       console.log('error signing up:', error);
   }
+  console.log("End of Signup Function");
 }
 class ModalSignUp extends Component {
   render() {
@@ -58,7 +60,8 @@ class ModalSignUp extends Component {
           </label>
         </div>
         <div>
-          <input className="signup-login" type="button" value="Sign Up" onClick={signUp} />
+          <input className="signup-login" type="submit" value="Sign Up" onClick={signUp} /> 
+          {/*  Line 63 triggers when clicking "Need an Account" not Log In... */}
         </div>
         <div>
           <p className="signup-or-login-label">Or</p>

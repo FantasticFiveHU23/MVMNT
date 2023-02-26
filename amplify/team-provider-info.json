@@ -17,6 +17,26 @@
       },
       "storage": {
         "s3appstoraged41a151b": {}
+      },
+      "function": {
+        "appCreateAuthChallenge": {},
+        "appCustomMessage": {
+          "REDIRECTURL": "/homepage.js",
+          "EMAILSUBJECT": "Your MVMNT Account has been created!",
+          "EMAILMESSAGE": "Feel free to continue to your account!"
+        },
+        "appDefineAuthChallenge": {},
+        "appPostConfirmation": {
+          "GROUP": "customerUser"
+        },
+        "appPreSignup": {
+          "DOMAINALLOWLIST": "gmail.com,hotmail.com,yahoo.com,comcast.com,outlook.com",
+          "DOMAINDENYLIST": ""
+        },
+        "appVerifyAuthChallengeResponse": {
+          "RECAPTCHASECRET": ""
+        },
+        "appPreTokenGeneration": {}
       }
     }
   }

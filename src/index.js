@@ -8,7 +8,7 @@ import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports';
 import {Header} from "./components/Header";
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
-import {BusinessPage} from "./pages/BusinessPage";
+import BusinessPage from "./pages/BusinessPage";
 
 Amplify.configure(awsExports);
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,7 +25,7 @@ const Main = () => {
                             isLoggedIn={isLoggedIn}
                         />}
                     />
-                    <Route path = "/Businesspage" element={<BusinessPage/>}/>
+                    <Route path = "/BusinessPage" element={<BusinessPage/>}/>
                 </Routes>
             </Router>
         </div>

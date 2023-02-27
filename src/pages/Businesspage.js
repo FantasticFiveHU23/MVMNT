@@ -4,7 +4,7 @@ import {Footer} from "../components/Footer";
 import '../styles/BusinessPage/BusinessPage.css'
 import Review from "../components/BusinessPage/reviewfeed";
 
-class Businesspage extends React.Component {
+export default class BusinessPage extends React.Component {
   render() {
     return (
       <div>
@@ -21,5 +21,4 @@ class Businesspage extends React.Component {
       </div>
     );
   }
-}
-export default Businesspage;
+};

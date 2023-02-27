@@ -1,4 +1,4 @@
-.my-reviews-container{
+.favorites-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.my-reviews-header {
+.favorites-header {
     position: relative;
     top: 0;
     left: 0;
@@ -23,7 +23,7 @@
     
   }
 
-  .my-reviews-header-text{
+  .favorites-header-text{
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     color: #FCD7AD;

@@ -1,5 +1,5 @@
 
-.myreviews-business-container{
+.favorites-business-container{
     display: flex;
     position: relative;
     flex: 0 0 auto;
@@ -13,7 +13,7 @@
   }
   
   
-  .myreviews-business-field {
+  .favorites-business-field {
     display: flex;
     position: relative;
     flex: 0 0 auto;
@@ -33,7 +33,7 @@
     overflow: hidden;
   }
   
-  .myreviews-business-pfp {
+  .favorites-business-pfp {
     border-radius: 10px;
     
     position: relative;
@@ -44,7 +44,7 @@
     left: -15px;
   }
   
-  .myreviews-business-header{
+  .favorites-business-header{
   display: inline-flex;
   justify-content: left;
   align-items: center;
@@ -56,7 +56,7 @@
   /* padding-right: 10px; */
   }
   /**/
-  .myreviews-business-name{
+  .favorites-business-name{
     padding-left: 10px;
   
     font-family: 'Lato', sans-serif;
@@ -65,7 +65,7 @@
     font-size: 20px;
   }
   
-  .myreviews-business-id{
+  .favorites-business-id{
     padding-left: 10px;
   
     font-family: 'Lato', sans-serif;
@@ -74,7 +74,7 @@
     font-size: 15px;
   }
   
-  .myreviews-info-container {
+  .favorites-info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +86,7 @@
 }
   
   
-  .myreviews-category, .myreviews-rating{
+  .favorites-category, .favorites-rating{
     width: 170px; 
     height: 20px;
     padding: 5px;
@@ -98,15 +98,15 @@
     font-weight: 500;
     font-family: 'Lato', sans-serif;
   }
-  .myreviews-category{
+  .favorites-category{
     padding-right: 75px;
     font-family: 'Lato', sans-serif;
   }
 
-  .myreviews-rating{
+  .favorites-rating{
     padding-right: 90px;
   }
-  .myreviews-bio-container{
+  .favorites-bio-container{
     display: flex;
     width: 534px;
     max-height: 90px;
@@ -125,7 +125,7 @@
   height: 100%; */
   
   
-  .myreviews-bio{
+  .favorites-bio{
     text-align: left;
     font-family: 'Lato', sans-serif;
     display: -webkit-box;

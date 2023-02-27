@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
-import { ProfileInfo } from "../components/CustomerProfile/ProfileInfo.js";
-import { MyReviews } from "../components/CustomerProfile/MyReviews.js";
-import { Favorites } from "../components/CustomerProfile/Favorites.js";
+import { ProfileInfo } from "../components/CustomerProfile/CustomerInfo/ProfileInfo";
+import { MyReviews } from "../components/CustomerProfile/MyReviews/MyReviews.js";
 
 export function CustomerProfile({ isLoggedIn }) {
   // eslint-disable-next-line
@@ -20,8 +19,8 @@ export function CustomerProfile({ isLoggedIn }) {
   return (
       <div className="page-content">
         <ProfileInfo />
-        {/* <MyReviews />
-        <Favorites /> */}
+        <MyReviews />
+        {/* <Favorites /> */}
       </div>
   );
 };

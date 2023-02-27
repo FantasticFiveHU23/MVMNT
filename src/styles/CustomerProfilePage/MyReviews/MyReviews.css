@@ -1,0 +1,13 @@
+.my-reviews-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    background-color: #F6C28B;
+    width: 550px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}

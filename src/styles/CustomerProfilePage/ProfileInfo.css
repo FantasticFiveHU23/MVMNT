@@ -1,16 +1,13 @@
 .profile-info-container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     position: absolute;
     top: 150px;
     left: 50px;
-    background-color: white;
+    /* background-color: white; */
     width: 270px;
     height: 500px;
     border-radius: 10px;
+    
   }
-  
-/* .customer-profile-pfp{
-    height: 10px;
-} */

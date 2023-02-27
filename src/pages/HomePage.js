@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {SearchBar} from "../components/SearchBar";
 import { BusinessList } from "../components/BusinessListHome/BusinessList";
-import {Footer} from "../components/Footer";
 import { FilterHeader, Checkboxes, Star } from "../components/Filters/Filter";
 import businesses from "../components/BusinessListHome/BusinessInfoEx";
 import { API, graphqlOperation } from "aws-amplify";

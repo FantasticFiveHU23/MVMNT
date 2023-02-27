@@ -1,7 +1,7 @@
 import '../styles/App.css';
 import React, { useState } from 'react';
 import {HomePage} from './HomePage';
-import Businesspage from './Businesspage';
+import Businesspage from './BusinessPage';
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import {Header} from "../components/Header";
 import { FindBusinesses } from './FindBusinesses';

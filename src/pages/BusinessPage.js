@@ -1,7 +1,7 @@
 import React from "react";
 import {Footer} from "../components/Footer";
-
-export default class BusinessPage extends React.Component {
+import React from "react";
+class BusinessPage extends React.Component {
   render() {
     return (
         <div>
@@ -15,3 +15,5 @@ export default class BusinessPage extends React.Component {
     );
   }
 };
+
+export default BusinessPage;

@@ -1,3 +1,4 @@
+import React from "react";
 import {Footer} from "../components/Footer";
 
 export default class BusinessPage extends React.Component {

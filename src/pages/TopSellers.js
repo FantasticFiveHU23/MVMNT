@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { TopSellersList } from "../components/TopSellersPage/TopSellersList";
-import {Footer} from "../components/Footer";
 import businesses from "../components/TopSellersPage/TopSellersInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
@@ -21,7 +20,6 @@ export function TopSellers({ isLoggedIn }) {
     <div>
       <div className="page-content">
         <TopSellersList businesses={businesses}/>
-        <Footer/>
       </div>
     </div>
   );

@@ -1,0 +1,35 @@
+.category-button {
+  position: relative; 
+  max-width: 250px;
+  max-height: 250px;
+  border: 2px solid #FBF6F3;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.category-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.category-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-text {
+  border-radius: 5px;
+  position: relative;
+  top: -120px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 550;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}

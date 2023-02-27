@@ -1,0 +1,110 @@
+
+.local-business-container{
+    display: flex;
+    position: relative;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: -20px;  /* height of search bar + desired margin */
+  }
+  
+  .local-business-field {
+    display: flex;
+    position: relative;
+    flex: 0 0 auto;
+    width: 550px;
+    height: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    background: #fbf6f3;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  
+    /* flex-direction: column; */
+    align-items: flex-start;
+  
+    overflow: hidden;
+  }
+  
+  .local-business-pfp {
+    border-radius: 15px;
+    position: relative;
+    width: 208px;
+    height: 208px !important;
+    top: -14.5px;
+    left: -15px;
+}
+  
+  .local-business-header{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 10px;
+  left: 215px;
+  width: 350px;
+  height: 30%;
+  }
+
+  .local-business-name {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+
+  }
+  
+  .local-business-id{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+  }
+  
+  .local-info-container {
+    display: inline-flex;
+    justify-content: space-between;
+  
+    position: relative;
+    top: 115px;
+    left: 10px;
+    width: 400px;
+    height: 30%;
+  }
+  
+  
+  .local-category, .local-distance {
+    width: calc(50% - 1.5px);
+    height: 29px;
+    width: 149px;
+    border-right: 1.5px solid black;
+    padding: 5px;
+    padding-right: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+}
+  
+  .local-category{
+    padding-right: 40px;
+    font-family: 'Lato', sans-serif;
+  }
+  .local-distance {
+    border-right: none;
+    font-family: 'Lato', sans-serif;
+  }

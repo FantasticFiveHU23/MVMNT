@@ -1,25 +1,14 @@
-import React from "react";
-import Dashboard from "../components/BusinessPage/Dashboardbutton";
-import {Footer} from "../components/Footer";
-import '../styles/BusinessPage/BusinessPage.css'
-import Review from "../components/BusinessPage/reviewfeed";
+import { Footer } from "../components/Footer";
 
-class Businesspage extends React.Component {
-  render() {
+export function BusinessPage() {
     return (
-      <div>
-        <div className="page-content">
-         <h2>[Business Name]</h2>
-        
-          
-
-          
-          <Dashboard/>
-          <Review/>
-   
+        <div>
+            <div className="page-content">
+                <h2>[Business Name]</h2>
+                {/*<Dashboard/>*/}
+                {/*<Review/>*/}
+            </div>
+            <Footer/>
         </div>
-      </div>
     );
-  }
 }
-export default Businesspage;

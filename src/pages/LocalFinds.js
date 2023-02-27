@@ -10,14 +10,6 @@ export function LocalFinds({ location, isLoggedIn }) {
   // eslint-disable-next-line
   const [business, setBusiness] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const businessData = await API.graphql(graphqlOperation(listBusinesses));
-      setBusiness(businessData.data.listBusinesses.items);
-    };
-    fetchData();
-  }, []);
-
   return (
     <div>
       <div className="page-content">

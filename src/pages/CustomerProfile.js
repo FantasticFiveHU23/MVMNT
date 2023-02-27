@@ -3,6 +3,7 @@ import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
 import { ProfileInfo } from "../components/CustomerProfile/CustomerInfo/ProfileInfo";
 import { MyReviews } from "../components/CustomerProfile/MyReviews/MyReviews.js";
+import businesses from "../components/CustomerProfile/MyReviews/MyReviewsInfoEx.js";
 
 export function CustomerProfile({ isLoggedIn }) {
   // eslint-disable-next-line

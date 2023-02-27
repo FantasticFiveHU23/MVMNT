@@ -1,8 +1,8 @@
 import React from "react";
 import FavoritesField from "./FavoritesField";
-import "../../../styles/CustomerProfilePage/Favorites/Favorites.css"
+import "../../../styles/CustomerProfilePage/Favorites/FavoritesList.css"
 
-export function Favorites({ businesses }) {
+export function MyReviewsList({ businesses }) {
   return (
     <div className="favorites-business-list-container">
       <div className="favorites-list">

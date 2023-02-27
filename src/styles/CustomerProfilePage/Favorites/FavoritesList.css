@@ -1,0 +1,17 @@
+.my-reviews-business-list-container{
+    height: 600px;
+    
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 550px;
+    height: 520px;
+  }
+  .my-reviews-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-left: 10px;
+  }
+  

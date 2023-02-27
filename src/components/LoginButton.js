@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/LoginButton.css';
-import '../styles/Modal/ModalPopUp.css'
-import {ModalPopUp} from './Modal/ModalPopUp'
-
+import '../styles/Modal/ModalPopUp.css';
+import {ModalPopUp} from './Modal/ModalPopUp';
 
 // class LoginButton extends React.Component {
 //   state = {

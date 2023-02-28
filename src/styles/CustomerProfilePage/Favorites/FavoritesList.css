@@ -1,17 +1,19 @@
-.my-reviews-business-list-container{
+.favorites-business-list-container{
     height: 600px;
     
     overflow: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 550px;
+    width: 400px;
     height: 520px;
+
   }
-  .my-reviews-list {
+  .favorites-list{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 370px;
+    margin-left: 0px;
     margin-top: 15px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
-  

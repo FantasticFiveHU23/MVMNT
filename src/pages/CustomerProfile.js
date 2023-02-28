@@ -3,7 +3,8 @@ import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
 import { ProfileInfo } from "../components/CustomerProfile/CustomerInfo/ProfileInfo";
 import { MyReviews } from "../components/CustomerProfile/MyReviews/MyReviews.js";
-import businesses from "../components/CustomerProfile/MyReviews/MyReviewsInfoEx.js";
+import { Favorites } from "../components/CustomerProfile/Favorites/Favorites.js";
+import businesses from "../components/CustomerProfile/Favorites/FavoritesInfoEx.js";
 
 export function CustomerProfile({ isLoggedIn }) {
   // eslint-disable-next-line
@@ -21,7 +22,7 @@ export function CustomerProfile({ isLoggedIn }) {
       <div className="page-content">
         <ProfileInfo />
         <MyReviews />
-        {/* <Favorites /> */}
+        <Favorites />
       </div>
   );
 };

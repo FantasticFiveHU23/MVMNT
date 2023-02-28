@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../../styles/CustomerProfilePage/Favorites/Favorites.css";
-import FavoritesField from "./FavoritesField";
 import businesses from "./FavoritesInfoEx";
 import { FavoritesList } from "./FavoritesList";
 

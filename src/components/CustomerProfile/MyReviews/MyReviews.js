@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../../styles/CustomerProfilePage/MyReviews/MyReviews.css";
-import MyReviewsField from "./MyReviewsField";
 import businesses from "./MyReviewsInfoEx";
 import { MyReviewsList } from "./MyReviewsList";
 

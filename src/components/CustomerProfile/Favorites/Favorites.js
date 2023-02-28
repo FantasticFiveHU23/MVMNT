@@ -1,24 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "../../../styles/CustomerProfilePage/Favorites/Favorites.css";
 import FavoritesField from "./FavoritesField";
-import "../../../styles/CustomerProfilePage/Favorites/Favorites.css"
+import businesses from "./FavoritesInfoEx";
+import { FavoritesList } from "./FavoritesList";
 
-export function Favorites({ businesses }) {
-  return (
-    <div className="favorites-business-list-container">
-      <div className="favorites-list">
-        {businesses &&
-          businesses.map((business) => (
-            <FavoritesField
-              key={business.businessId}
-              businessName={business.businessName}
-              businessId={business.businessId}
-              category={business.category}
-              rating={business.rating}
-              distance={business.distance}
-              bio={business.bio}
-            />
-          ))}
+export function Favorites() {
+    return (
+      <div className="favorites-container">
+        <div className="favorites-header">
+          <h2 className="favorites-header-text">Favorites</h2>
+        </div>
+        <FavoritesList businesses={businesses} />
       </div>
-    </div>
-  );
-}
+    );
+  }

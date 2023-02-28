@@ -20,6 +20,7 @@ type EagerBusiness = {
   readonly reviews?: (Reviews | null)[] | null;
   readonly category?: string | null;
   readonly username: string;
+  readonly bio?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -38,6 +39,7 @@ type LazyBusiness = {
   readonly reviews: AsyncCollection<Reviews>;
   readonly category?: string | null;
   readonly username: string;
+  readonly bio?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

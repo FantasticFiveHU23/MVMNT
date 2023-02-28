@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Header.css';
 import { LoginButton } from "../components/LoginButton";
+import { LoginButton } from "../components/LoginButton";
 import logo from "../images/logo.png";
 import { ProfilePicture } from "../components/ProfilePicture";
 import '../styles/ProfilePicture.css'

@@ -9,11 +9,18 @@
       "UnauthRoleName": "amplify-mvmnt-dev-212732-unauthRole",
       "StackName": "amplify-mvmnt-dev-212732",
       "StackId": "arn:aws:cloudformation:us-east-1:632009276319:stack/amplify-mvmnt-dev-212732/7e2b5fc0-9ac5-11ed-a496-1280dcdd8785",
-      "AmplifyAppId": "d2563t53q1oliy"
+      "AmplifyAppId": "d2563t53q1oliy",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-mvmnt-dev-212732-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
-        "app": {}
+        "app": {
+          "facebookAppId": "s",
+          "googleClientId": "a",
+          "amazonAppId": "a",
+          "appleAppId": "a"
+        },
+        "userPoolGroups": {}
       },
       "storage": {
         "s3appstoraged41a151b": {}
@@ -21,22 +28,23 @@
       "function": {
         "appCreateAuthChallenge": {},
         "appCustomMessage": {
-          "REDIRECTURL": "/homepage.js",
-          "EMAILSUBJECT": "Your MVMNT Account has been created!",
-          "EMAILMESSAGE": "Feel free to continue to your account!"
+          "REDIRECTURL": "google.com",
+          "EMAILSUBJECT": "Mvmnt Account Verification",
+          "EMAILMESSAGE": "Please click this link to verify your account:"
         },
         "appDefineAuthChallenge": {},
         "appPostConfirmation": {
           "GROUP": "customerUser"
         },
         "appPreSignup": {
-          "DOMAINALLOWLIST": "gmail.com,hotmail.com,yahoo.com,comcast.com,outlook.com",
+          "DOMAINALLOWLIST": "",
           "DOMAINDENYLIST": ""
         },
         "appVerifyAuthChallengeResponse": {
           "RECAPTCHASECRET": ""
         },
-        "appPreTokenGeneration": {}
+        "appPreTokenGeneration": {},
+        "AdminQueriesc470aa58": {}
       }
     }
   },

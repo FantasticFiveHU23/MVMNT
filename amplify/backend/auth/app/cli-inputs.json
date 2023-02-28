@@ -2,20 +2,20 @@
   "version": "1",
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
-    "allowUnauthenticatedIdentities": true,
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "app057c0e09",
     "userPoolName": "app",
     "autoVerifiedAttributes": [
       "email"
     ],
-    "mfaConfiguration": "OPTIONAL",
+    "mfaConfiguration": "OFF",
     "mfaTypes": [
       "SMS Text Message"
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
-    "emailVerificationSubject": "MVMNT Verification Code",
-    "emailVerificationMessage": "Your Verification Code for MVMNT is {####}",
+    "emailVerificationSubject": "Your MVMNT account verification code",
+    "emailVerificationMessage": "Verification code: {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [
@@ -27,7 +27,7 @@
     "requiredAttributes": [],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
-    "userpoolClientRefreshTokenValidity": "180",
+    "userpoolClientRefreshTokenValidity": "290",
     "userpoolClientWriteAttributes": [
       "address",
       "birthdate",
@@ -79,9 +79,13 @@
     ],
     "useDefault": "manual",
     "userPoolGroups": true,
-    "userPoolGroupList": [],
+    "userPoolGroupList": [
+      "adminUser",
+      "customerUser",
+      "businessUser"
+    ],
     "adminQueries": true,
-    "thirdPartyAuth": true,
+    "thirdPartyAuth": false,
     "authProviders": [],
     "usernameCaseSensitive": false,
     "useEnabledMfas": true,
@@ -191,7 +195,7 @@
       ]
     },
     "hostedUI": false,
-    "adminQueryGroup": "admin",
+    "adminQueryGroup": "adminUser",
     "verificationBucketName": "appverificationbucket",
     "parentStack": {
       "Ref": "AWS::StackId"

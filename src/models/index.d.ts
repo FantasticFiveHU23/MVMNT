@@ -51,10 +51,7 @@ type EagerBusiness = {
   readonly category?: string | null;
   readonly username: string;
   readonly bio?: string | null;
-<<<<<<< HEAD
   readonly categorys?: (CategoryBusiness | null)[] | null;
-=======
->>>>>>> c31400d25424d1ac676c4bc8c88c3a86f66bd15b
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -74,10 +71,7 @@ type LazyBusiness = {
   readonly category?: string | null;
   readonly username: string;
   readonly bio?: string | null;
-<<<<<<< HEAD
   readonly categorys: AsyncCollection<CategoryBusiness>;
-=======
->>>>>>> c31400d25424d1ac676c4bc8c88c3a86f66bd15b
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -86,6 +80,46 @@ export declare type Business = LazyLoading extends LazyLoadingDisabled ? EagerBu
 
 export declare const Business: (new (init: ModelInit<Business>) => Business) & {
   copyOf(source: Business, mutator: (draft: MutableModel<Business>) => MutableModel<Business> | void): Business;
+}
+
+type EagerUser = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<User, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly username: string;
+  readonly email: string;
+  readonly firstname: string;
+  readonly lastname: string;
+  readonly reviews?: (string | null)[] | null;
+  readonly Reviews?: (Reviews | null)[] | null;
+  readonly Comments?: (Comment | null)[] | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyUser = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<User, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly username: string;
+  readonly email: string;
+  readonly firstname: string;
+  readonly lastname: string;
+  readonly reviews?: (string | null)[] | null;
+  readonly Reviews: AsyncCollection<Reviews>;
+  readonly Comments: AsyncCollection<Comment>;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type User = LazyLoading extends LazyLoadingDisabled ? EagerUser : LazyUser
+
+export declare const User: (new (init: ModelInit<User>) => User) & {
+  copyOf(source: User, mutator: (draft: MutableModel<User>) => MutableModel<User> | void): User;
 }
 
 type EagerReviews = {
@@ -101,6 +135,7 @@ type EagerReviews = {
   readonly datePublished?: string | null;
   readonly replies?: (string | null)[] | null;
   readonly userID: string;
+  readonly rating: number;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly businessReviewsId?: string | null;
@@ -119,6 +154,7 @@ type LazyReviews = {
   readonly datePublished?: string | null;
   readonly replies?: (string | null)[] | null;
   readonly userID: string;
+  readonly rating: number;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   readonly businessReviewsId?: string | null;
@@ -164,46 +200,6 @@ export declare type Comment = LazyLoading extends LazyLoadingDisabled ? EagerCom
 
 export declare const Comment: (new (init: ModelInit<Comment>) => Comment) & {
   copyOf(source: Comment, mutator: (draft: MutableModel<Comment>) => MutableModel<Comment> | void): Comment;
-}
-
-type EagerUser = {
-  readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<User, 'id'>;
-    readOnlyFields: 'createdAt' | 'updatedAt';
-  };
-  readonly id: string;
-  readonly username: string;
-  readonly email: string;
-  readonly firstname: string;
-  readonly lastname: string;
-  readonly reviews?: (string | null)[] | null;
-  readonly Reviews?: (Reviews | null)[] | null;
-  readonly Comments?: (Comment | null)[] | null;
-  readonly createdAt?: string | null;
-  readonly updatedAt?: string | null;
-}
-
-type LazyUser = {
-  readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<User, 'id'>;
-    readOnlyFields: 'createdAt' | 'updatedAt';
-  };
-  readonly id: string;
-  readonly username: string;
-  readonly email: string;
-  readonly firstname: string;
-  readonly lastname: string;
-  readonly reviews?: (string | null)[] | null;
-  readonly Reviews: AsyncCollection<Reviews>;
-  readonly Comments: AsyncCollection<Comment>;
-  readonly createdAt?: string | null;
-  readonly updatedAt?: string | null;
-}
-
-export declare type User = LazyLoading extends LazyLoadingDisabled ? EagerUser : LazyUser
-
-export declare const User: (new (init: ModelInit<User>) => User) & {
-  copyOf(source: User, mutator: (draft: MutableModel<User>) => MutableModel<User> | void): User;
 }
 
 type EagerCategoryBusiness = {

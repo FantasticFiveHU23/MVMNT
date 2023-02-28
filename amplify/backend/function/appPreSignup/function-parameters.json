@@ -14,7 +14,7 @@
   "triggerEventPath": "PreSignup.event.json",
   "roleName": "appPreSignup",
   "skipEdit": true,
-  "DOMAINALLOWLIST": "gmail.com,hotmail.com,yahoo.com,comcast.com,outlook.com",
+  "DOMAINALLOWLIST": "",
   "DOMAINDENYLIST": "",
   "enableCors": false
 }

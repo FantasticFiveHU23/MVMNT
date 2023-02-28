@@ -16,7 +16,7 @@
             "Name"
           ],
           "category": "function",
-          "resourceName": "AdminQueriesc470aa58"
+          "resourceName": "AdminQueries912435e6"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -113,7 +113,7 @@
         }
       ],
       "frontendAuthConfig": {
-        "mfaConfiguration": "OPTIONAL",
+        "mfaConfiguration": "OFF",
         "mfaTypes": [
           "SMS"
         ],
@@ -137,10 +137,26 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    },
+    "userPoolGroups": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId",
+            "AppClientIDWeb",
+            "AppClientID",
+            "IdentityPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "app"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito-UserPool-Groups"
     }
   },
   "function": {
-    "AdminQueriesc470aa58": {
+    "AdminQueries912435e6": {
       "build": true,
       "dependsOn": [
         {
@@ -188,64 +204,6 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_function_appCustomMessage_EMAILMESSAGE": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "appCustomMessage"
-        }
-      ]
-    },
-    "AMPLIFY_function_appCustomMessage_EMAILSUBJECT": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "appCustomMessage"
-        }
-      ]
-    },
-    "AMPLIFY_function_appCustomMessage_REDIRECTURL": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "appCustomMessage"
-        }
-      ]
-    },
-    "AMPLIFY_function_appPostConfirmation_GROUP": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "appPostConfirmation"
-        }
-      ]
-    },
-    "AMPLIFY_function_appPreSignup_DOMAINALLOWLIST": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "appPreSignup"
-        }
-      ]
-    },
-    "AMPLIFY_function_appPreSignup_DOMAINDENYLIST": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "appPreSignup"
-        }
-      ]
-    },
-    "AMPLIFY_function_appVerifyAuthChallengeResponse_RECAPTCHASECRET": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "appVerifyAuthChallengeResponse"
-        }
-      ]
     }
   },
   "storage": {

@@ -18,9 +18,9 @@
   "triggerEventPath": "CustomMessage.event.json",
   "roleName": "appCustomMessage",
   "skipEdit": true,
-  "REDIRECTURL": "/homepage.js",
-  "EMAILSUBJECT": "Your MVMNT Account has been created!",
-  "EMAILMESSAGE": "Feel free to continue to your account!",
+  "REDIRECTURL": "google.com",
+  "EMAILSUBJECT": "Mvmnt Account Verification",
+  "EMAILMESSAGE": "Please click this link to verify your account:",
   "RESOURCENAME": "resourceName",
   "enableCors": false
 }

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
+import "./styles/App.css";
 import {Amplify, Auth} from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { attached } from "@aws-amplify/datastore/lib-esm/datastore/datastore";
@@ -24,16 +25,12 @@ const Main = () => {
 
     return (
         <div className="App">
-            <Header/>
+            <Header isLoggedIn ={isLoggedIn} />
            
             <Router>
                  
                 <Routes>
-                    <Route path="/" element={
-                        <HomePage
-                            isLoggedIn={isLoggedIn}
-                        />}
-                    />
+                    <Route path="/" element={<HomePage isLoggedIn={isLoggedIn} />} />
                     <Route path = "/BusinessPage" element={<BusinessPage/>}/>
                     <Route path="/search" element={<FindBusinesses />} />
                     <Route path="/local-finds" element={<LocalFinds location="Washington D.C" />} />

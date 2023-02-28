@@ -38,6 +38,7 @@ type Reviews @model @auth(rules: [{allow: public}]) {
   datePublished: AWSDateTime
   replies: [ID]
   userID: ID! @index(name: "byUser")
+  rating: Float!
 }
 
 type Comment @model @auth(rules: [{allow: public}]) {

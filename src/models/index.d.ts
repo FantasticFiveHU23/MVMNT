@@ -51,7 +51,10 @@ type EagerBusiness = {
   readonly category?: string | null;
   readonly username: string;
   readonly bio?: string | null;
+<<<<<<< HEAD
   readonly categorys?: (CategoryBusiness | null)[] | null;
+=======
+>>>>>>> c31400d25424d1ac676c4bc8c88c3a86f66bd15b
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -71,7 +74,10 @@ type LazyBusiness = {
   readonly category?: string | null;
   readonly username: string;
   readonly bio?: string | null;
+<<<<<<< HEAD
   readonly categorys: AsyncCollection<CategoryBusiness>;
+=======
+>>>>>>> c31400d25424d1ac676c4bc8c88c3a86f66bd15b
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

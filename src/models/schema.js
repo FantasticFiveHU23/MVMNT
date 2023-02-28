@@ -157,22 +157,6 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "categorys": {
-                    "name": "categorys",
-                    "isArray": true,
-                    "type": {
-                        "model": "CategoryBusiness"
-                    },
-                    "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": [
-                            "business"
-                        ]
-                    }
-                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -556,6 +540,20 @@ export const schema = {
                     "isRequired": false,
                     "attributes": [],
                     "isReadOnly": true
+                },
+                "userBusinessId": {
+                    "name": "userBusinessId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "userBusinessId": {
+                    "name": "userBusinessId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
                 }
             },
             "syncable": true,
@@ -685,5 +683,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.5",
-    "version": "6821ad692b9ede77ce561333a13fb042"
+    "version": "d4261932d4a249b0018e8709e9483bb0"
 };

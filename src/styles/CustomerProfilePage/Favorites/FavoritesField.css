@@ -1,0 +1,99 @@
+
+.favorites-business-container{
+    display: flex;
+    position: relative;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-left: -8px;
+  }
+  
+  
+  .favorites-business-field {
+    display: flex;
+    position: relative;
+    flex: 0 0 auto;
+    width: 335px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    background: #fbf6f3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  
+    flex-direction: column;
+    align-items: flex-start;
+  
+    overflow: hidden;
+  }
+  
+  .favorites-business-pfp {
+    border-radius: 10px;
+  
+    position: relative;
+    width: 95px;
+    height: 78px;
+  
+    top: -14.5px;
+    left: -15px;
+  }
+  
+  .favorites-business-header{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  top: -105px;
+  left: 80px;
+  width: 800px;
+  height: 100%;
+  /* padding-right: 10px; */
+  }
+  /**/
+  .favorites-business-name{
+    padding-left: 10px;
+  
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .favorites-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -120px;
+    left: 150px;
+    width: 170px;
+    height: 100%;
+}
+  
+  
+  .favorites-category, .favorites-rating{
+    width: 170px; 
+    height: 20px;
+    padding: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+      padding-right: 75px;
+
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+  }
+  .favorites-category{
+    padding-right: 75px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .favorites-rating{
+    padding-right: 90px;
+  }

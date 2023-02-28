@@ -12,6 +12,8 @@ import BusinessPage from "./pages/BusinessPage";
 import { FindBusinesses } from "./pages/FindBusinesses";
 import {LocalFinds} from "./pages/LocalFinds";
 import {TopSellers} from "./pages/TopSellers";
+import {CustomerProfile} from "./pages/CustomerProfile";
+import {Categories} from "./pages/Categories";
 
 Amplify.configure(awsExports);
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -35,6 +37,8 @@ const Main = () => {
                     <Route path="/search" element={<FindBusinesses />} />
                     <Route path="/local-finds" element={<LocalFinds location="Washington D.C" />} />
                     <Route path="/top-sellers" element={<TopSellers />} />
+                    <Route path="/categories" element={<Categories />} />
+                    <Route path="/profile-page" element={<CustomerProfile />} />
                 </Routes>
             </Router>
         </div>

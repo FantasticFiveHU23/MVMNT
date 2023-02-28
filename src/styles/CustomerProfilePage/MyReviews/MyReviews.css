@@ -1,0 +1,30 @@
+.my-reviews-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    background-color: #F6C28B;
+    width: 550px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.my-reviews-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #5296A5;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    
+  }
+
+  .my-reviews-header-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #FCD7AD;
+  }

@@ -9,6 +9,7 @@ import awsExports from './aws-exports';
 import {Header} from "./components/Header";
 import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import BusinessPage from "./pages/BusinessPage";
+import {LocalFinds} from "./pages/LocalFinds";
 import {TopSellers} from "./pages/TopSellers";
 
 Amplify.configure(awsExports);
@@ -30,6 +31,7 @@ const Main = () => {
                         />}
                     />
                     <Route path = "/BusinessPage" element={<BusinessPage/>}/>
+                    <Route path="/local-finds" element={<LocalFinds location="Washington D.C" />} />
                     <Route path="/top-sellers" element={<TopSellers />} />
                 </Routes>
             </Router>

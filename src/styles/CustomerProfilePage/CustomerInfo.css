@@ -1,0 +1,36 @@
+.customer-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    position: absolute;
+    top: 250px;
+    background-color:#FBF6F3;
+    width: 230px;
+    height: 135px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .username{
+    background: transparent;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-top: -60px;
+
+  }
+
+  .user-id{
+    top: 50px;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .location{
+    top: 50px;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    /* margin-top: 10px; */
+  }

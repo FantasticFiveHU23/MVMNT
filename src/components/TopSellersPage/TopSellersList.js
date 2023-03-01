@@ -9,13 +9,13 @@ export function TopSellersList({ businesses }) {
         {businesses &&
           businesses.map((business) => (
             <TopSellersField
-              key={business.businessId}
-              businessName={business.businessName}
-              businessId={business.businessId}
-              category={business.category}
-              rating={business.rating}
-              distance={business.distance}
-              bio={business.bio}
+            key={business.username}
+            businessName={business.name}
+            businessId={business.username}
+            category={business.category}
+            rating={business.rating}
+            distance={business.distance}
+            bio={business.bio}
             />
           ))}
       </div>

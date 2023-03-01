@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { LocalFindsList } from "../components/LocalFindsPage/LocalFindsList";
-// import businesses from "../components/LocalFindsPage/LocalFindsInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
-import { LocalMaps } from "../components/LocalFindsPage/LocalMaps";
-import "../styles/LocalFindsPage/LocalFinds.css";
+import { ProfileInfo } from "../components/CustomerProfile/CustomerInfo/ProfileInfo";
+import { MyReviews } from "../components/CustomerProfile/MyReviews/MyReviews.js";
+import { Favorites } from "../components/CustomerProfile/Favorites/Favorites.js";
 
-export function LocalFinds({ location, isLoggedIn }) {
+
+export function CustomerProfile({ isLoggedIn }) {
   const [businessCollection, setBusinessCollection] = useState()
 
   useEffect(() => {
@@ -26,12 +26,10 @@ export function LocalFinds({ location, isLoggedIn }) {
   }, [businessCollection])
 
   return (
-    <div>
       <div className="page-content">
-        <h2 className="title">{location}</h2>
-        <LocalMaps/>
-        <LocalFindsList businesses={businessCollection}/>
+        <ProfileInfo />
+        <MyReviews businesses={businessCollection}/>
+        <Favorites businesses={businessCollection}/>
       </div>
-    </div>
   );
-}
+};

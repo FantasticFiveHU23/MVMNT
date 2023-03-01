@@ -8,7 +8,7 @@
     "autoVerifiedAttributes": [
       "email"
     ],
-    "mfaConfiguration": "OFF",
+    "mfaConfiguration": "OPTIONAL",
     "mfaTypes": [
       "SMS Text Message"
     ],
@@ -69,7 +69,7 @@
       "phone_number_verified"
     ],
     "userpoolClientLambdaRole": "app057c0e09_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": true,
+    "userpoolClientSetAttributes": false,
     "sharedId": "057c0e09",
     "resourceName": "app",
     "authSelections": "identityPoolAndUserPool",
@@ -78,13 +78,13 @@
       "email"
     ],
     "useDefault": "manual",
-    "userPoolGroups": true,
+    "userPoolGroups": false,
     "userPoolGroupList": [
       "adminUser",
       "customerUser",
       "businessUser"
     ],
-    "adminQueries": true,
+    "adminQueries": false,
     "thirdPartyAuth": false,
     "authProviders": [],
     "usernameCaseSensitive": false,

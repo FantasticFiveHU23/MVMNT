@@ -1,25 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { TopSellersList } from "../components/TopSellersPage/TopSellersList";
-import businesses from "../components/TopSellersPage/TopSellersInfoEx";
 import { API, graphqlOperation } from "aws-amplify";
 import { listBusinesses } from "../graphql/queries.js";
 
 export function TopSellers({ isLoggedIn }) {
-  // eslint-disable-next-line
-  const [business, setBusiness] = useState([]);
+  const [businessCollection, setBusinessCollection] = useState()
 
   useEffect(() => {
-    const fetchData = async () => {
-      const businessData = await API.graphql(graphqlOperation(listBusinesses));
-      setBusiness(businessData.data.listBusinesses.items);
-    };
-    fetchData();
-  }, []);
+      const fetchBusinessCollection = async()  => {
+          const data = await API.graphql(graphqlOperation(listBusinesses))
+          if (data) {
+              setBusinessCollection(data.data.listBusinesses.items)
+          }
+      }
+      fetchBusinessCollection()
+  }, [])
+
+  useEffect(() => {
+      if (businessCollection) {
+          console.log(businessCollection)
+      }
+  }, [businessCollection])
 
   return (
     <div>
       <div className="page-content">
-        <TopSellersList businesses={businesses}/>
+        <TopSellersList businesses={businessCollection}/>
       </div>
     </div>
   );

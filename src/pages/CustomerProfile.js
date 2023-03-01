@@ -4,25 +4,32 @@ import { listBusinesses } from "../graphql/queries.js";
 import { ProfileInfo } from "../components/CustomerProfile/CustomerInfo/ProfileInfo";
 import { MyReviews } from "../components/CustomerProfile/MyReviews/MyReviews.js";
 import { Favorites } from "../components/CustomerProfile/Favorites/Favorites.js";
-import businesses from "../components/CustomerProfile/Favorites/FavoritesInfoEx.js";
+
 
 export function CustomerProfile({ isLoggedIn }) {
-  // eslint-disable-next-line
-  const [business, setBusiness] = useState([]);
+  const [businessCollection, setBusinessCollection] = useState()
 
   useEffect(() => {
-    const fetchData = async () => {
-      const businessData = await API.graphql(graphqlOperation(listBusinesses));
-      setBusiness(businessData.data.listBusinesses.items);
-    };
-    fetchData();
-  }, []);
+      const fetchBusinessCollection = async()  => {
+          const data = await API.graphql(graphqlOperation(listBusinesses))
+          if (data) {
+              setBusinessCollection(data.data.listBusinesses.items)
+          }
+      }
+      fetchBusinessCollection()
+  }, [])
+
+  useEffect(() => {
+      if (businessCollection) {
+          console.log(businessCollection)
+      }
+  }, [businessCollection])
 
   return (
       <div className="page-content">
         <ProfileInfo />
-        <MyReviews />
-        <Favorites />
+        <MyReviews businesses={businessCollection}/>
+        <Favorites businesses={businessCollection}/>
       </div>
   );
 };

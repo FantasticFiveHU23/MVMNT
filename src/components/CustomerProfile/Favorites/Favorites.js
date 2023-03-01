@@ -1,9 +1,8 @@
 import React from "react";
 import "../../../styles/CustomerProfilePage/Favorites/Favorites.css";
-import businesses from "./FavoritesInfoEx";
 import { FavoritesList } from "./FavoritesList";
 
-export function Favorites() {
+export function Favorites({businesses}) {
     return (
       <div className="favorites-container">
         <div className="favorites-header">

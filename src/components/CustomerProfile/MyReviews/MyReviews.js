@@ -1,9 +1,8 @@
 import React from "react";
 import "../../../styles/CustomerProfilePage/MyReviews/MyReviews.css";
-import businesses from "./MyReviewsInfoEx";
 import { MyReviewsList } from "./MyReviewsList";
 
-export function MyReviews() {
+export function MyReviews({businesses}) {
     return (
       <div className="my-reviews-container">
         <div className="my-reviews-header">

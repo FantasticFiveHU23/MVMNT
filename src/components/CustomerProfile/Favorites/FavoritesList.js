@@ -9,13 +9,10 @@ export function FavoritesList({ businesses }) {
         {businesses &&
           businesses.map((business) => (
             <FavoritesField
-              key={business.businessId}
-              businessName={business.businessName}
-              businessId={business.businessId}
+              key={business.username}
+              businessName={business.name}
               category={business.category}
               rating={business.rating}
-              distance={business.distance}
-              bio={business.bio}
             />
           ))}
       </div>

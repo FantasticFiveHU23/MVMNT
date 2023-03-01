@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import './styles/App.css';
-
+import { Footer } from "./components/Footer";
 import { HomePage }from "./pages/HomePage";
 import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports';
@@ -19,6 +19,7 @@ Amplify.configure(awsExports);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Main = () => {
+    // eslint-disable-next-line
     const [isLoggedIn, setIsLoggedIn] = useState(true);
 
     return (
@@ -41,6 +42,7 @@ const Main = () => {
                     <Route path="/profile-page" element={<CustomerProfile />} />
                 </Routes>
             </Router>
+            <Footer/>
         </div>
     )
 }

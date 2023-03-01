@@ -19,7 +19,7 @@ const FavoritesField = ({
           className="favorites-business-pfp"
         />
         <div className="favorites-business-header">
-          <h2 className="favorites-business-name">Business{businessName}</h2>
+          <h2 className="favorites-business-name">{businessName}</h2>
         </div>
         <div className="favorites-info-container">
           <p className="favorites-category">{category}</p>

@@ -9,11 +9,12 @@ export function LocalFindsList({ businesses }) {
         {businesses &&
           businesses.map((business) => (
             <LocalFindsField
-              key={business.businessId}
-              businessName={business.businessName}
-              businessId={business.businessId}
+              key={business.username}
+              businessName={business.name}
+              businessId={business.username}
               category={business.category}
-              distance={business.distance}
+              // distance={business.distance}
+              distance='4.5'
             />
           ))}
       </div>

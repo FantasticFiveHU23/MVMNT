@@ -27,9 +27,6 @@ const LocalFindsField = ({
           <p className="local-rating">{rating}</p>
           <p className="local-distance">{distance}</p>
         </div>
-        <div className="local-bio-container">
-            <p className="local-bio">{bio}</p>
-        </div>
       </div>
     </div>
   );

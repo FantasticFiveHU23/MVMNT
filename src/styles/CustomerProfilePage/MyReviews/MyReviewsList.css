@@ -1,5 +1,5 @@
 .my-reviews-business-list-container{
-    height: 600px;
+    height: 100%;
     
     overflow: auto;
     margin-top: 10px;
@@ -14,4 +14,3 @@
     margin-top: 15px;
     padding-left: 10px;
   }
-  

@@ -44,17 +44,16 @@
     left: -15px;
   }
   
-  .myreviews-business-header{
-  display: inline-flex;
-  justify-content: left;
-  align-items: center;
-  position: relative;
-  top: -30px;
-  left: -20px;
-  width: 800px;
-  height: 100%;
-  /* padding-right: 10px; */
-  }
+  .myreviews-business-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 524px;
+    height: 25px;
+}
   /**/
   .myreviews-business-name{
     padding-left: 10px;
@@ -78,45 +77,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: -40px;
-    left: -15px;
-    width: 170px;
-    height: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+    width: 143px;
+    height: 65px;
 }
   
   
-  .myreviews-category, .myreviews-rating{
-    width: 170px; 
-    height: 20px;
-    padding: 5px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    box-sizing: border-box;
-      padding-right: 75px;
-
-    font-weight: 500;
-    font-family: 'Lato', sans-serif;
-  }
-  .myreviews-category{
+.myreviews-category, .myreviews-rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px; 
+  height: 20px;
+  padding: 5px;
+  margin-top: 12%;
+  margin-bottom: 1%;
+  box-sizing: border-box;
     padding-right: 75px;
-    font-family: 'Lato', sans-serif;
-  }
 
-  .myreviews-rating{
-    padding-right: 90px;
-  }
-  .myreviews-bio-container{
-    display: flex;
-    width: 534px;
-    max-height: 90px;
-    max-width: 333px;
-    position: relative; 
-    
-  
-    top: -90px;
-    left: 160px;
-  }
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+
+.myreviews-bio-container {
+  display: flex;
+  width: 534px;
+  max-height: 90px;
+  max-width: 333px;
+  position: relative;
+  top: 20px;
+  left: 160px;
+}
   
   /*
   top: -175px;

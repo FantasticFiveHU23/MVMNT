@@ -5,10 +5,10 @@
   flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
-  width: 800px;
-  height: 100%;
+  width: 100%;
+  height: 100px;
   margin: 0 auto;
-  margin-top: -20px;  /* height of search bar + desired margin */
+  margin-top: 2px;
 }
 
 
@@ -16,9 +16,9 @@
   display: flex;
   position: relative;
   flex: 0 0 auto;
-  width: 630px;
+  width: 550px;
   height: 50px;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
 
   background: #fbf6f3;
@@ -34,26 +34,25 @@
 
 .top-sellers-business-pfp {
   border-radius: 10px;
-  
-  position: relative;
-  width: 95px;
-  height: 78px;
-
-  top: -14.5px;
-  left: -15px;
+  position: absolute;
+  width: 98px;
+  height: 86px;
+  top: 2.5px;
+  left: 2px;
+  object-fit: cover;
 }
 
-.top-sellers-business-header{
-display: inline-flex;
-justify-content: left;
-align-items: center;
-position: relative;
-top: -105px;
-left: 85px;
-width: 800px;
-height: 100%;
-/* padding-right: 10px; */
+.top-sellers-business-header {
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 102px;
+  width: 483px;
+  height: 20px;
 }
+
 /**/
 .top-sellers-business-name {
   padding-left: 10px;
@@ -76,16 +75,18 @@ height: 100%;
 .top-sellers-info-container {
   display: inline-flex;
   justify-content: space-between;
-
-  position: relative;
-  top: -125px;
-  left: 75px;
-  width: 500px;
-  height: 100%;
+  position: absolute;
+  top: 27px;
+  left: 102px;
+  width: 483px;
+  height: 25px;
 }
 
 
 .top-sellers-category, .top-sellers-rating, .top-sellers-distance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(33.33% - 5px/3); 
   height: 20px;
   border-right: 1.5px solid black;
@@ -109,12 +110,12 @@ height: 100%;
   display: flex;
   width: 534px;
   max-height: 90px;
-  max-width: 470px;
-  position: relative; 
+  max-width: 483px;
+  position: absolute; 
   
 
-  top: -125px;
-  left: 95px;
+  top: 54px;
+  left: 102px;
 }
 
 /*

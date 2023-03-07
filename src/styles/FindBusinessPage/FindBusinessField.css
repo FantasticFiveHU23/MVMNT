@@ -5,19 +5,19 @@
   flex: 0 0 auto;
   flex-direction: column;
   align-items: center;
-  width: 800px;
-  height: 100%;
+  width: 680px;
+  height: 100px;
   margin: 0 auto;
-  margin-top: -20px;  /* height of search bar + desired margin */
+  margin-top: 2px;
 }
 
 .find-business-field {
   display: flex;
   position: relative;
   flex: 0 0 auto;
-  width: 630px;
+  width: 700px;
   height: 50px;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
 
   background: #fbf6f3;
@@ -42,17 +42,17 @@
   left: -15px;
 }
 
-.find-business-header{
-display: inline-flex;
-justify-content: left;
-align-items: center;
-position: relative;
-top: -105px;
-left: 85px;
-width: 800px;
-height: 100%;
-/* padding-right: 10px; */
+.find-business-header {
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  top: 6px;
+  left: 95px;
+  width: 630px;
+  height: 20px;
 }
+
 /**/
 .find-business-name {
   padding-left: 10px;
@@ -75,16 +75,18 @@ height: 100%;
 .find-info-container {
   display: inline-flex;
   justify-content: space-between;
-
-  position: relative;
-  top: -125px;
-  left: 75px;
-  width: 500px;
-  height: 100%;
+  position: absolute;
+  top: 24px;
+  left: 105px;
+  width: 630px;
+  height: 25px;
 }
 
 
 .find-category, .find-rating, .find-distance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(33.33% - 5px/3); 
   height: 20px;
   border-right: 1.5px solid black;
@@ -104,16 +106,13 @@ height: 100%;
   border-right: none; /* remove border for last element */
   font-family: 'Lato', sans-serif;
 }
-.find-bio-container{
-  display: flex;
-  width: 534px;
-  max-height: 90px;
-  max-width: 470px;
-  position: relative; 
-  
 
-  top: -125px;
-  left: 95px;
+.find-bio-container {
+  display: flex;
+  width: 630px;
+  position: absolute;
+  top: 52px;
+  left: 105px;
 }
 
 /*

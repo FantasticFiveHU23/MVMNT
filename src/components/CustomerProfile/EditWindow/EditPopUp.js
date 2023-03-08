@@ -12,7 +12,7 @@ export function EditPopUp(props) {
       <form >
         <label className="">
           {/* <ProfilePicture /> */}
-          <input type="file" onChange={(event) => setProfilePicture(event.target.value)} />
+          <input className="edit-pfp" type="file" onChange={(event) => setProfilePicture(event.target.value)} />
         </label>  
         
         <div className="user-info">

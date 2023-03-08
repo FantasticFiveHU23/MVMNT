@@ -5,7 +5,6 @@ import { ProfileInfo } from "../components/CustomerProfile/CustomerInfo/ProfileI
 import { MyReviews } from "../components/CustomerProfile/MyReviews/MyReviews.js";
 import { Favorites } from "../components/CustomerProfile/Favorites/Favorites.js";
 
-
 export function CustomerProfile({ isLoggedIn }) {
   const [businessCollection, setBusinessCollection] = useState()
 

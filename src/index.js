@@ -20,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Main = () => {
     // eslint-disable-next-line
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
         <div className="App">

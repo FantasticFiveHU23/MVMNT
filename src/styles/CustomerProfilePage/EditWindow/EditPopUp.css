@@ -1,0 +1,89 @@
+.edit-modal{
+    display: flex;
+    background-color: #FCD7AD;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 250%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.edit-popup-container {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 40px;
+    top: 5px;
+    width: 470px;
+    height: 440px;
+    background-color: rgba(140, 210, 141, 0.693);
+}
+
+
+
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 370px;
+    height: 160px;
+    top: 215px;
+    left: 50px;
+    background-color: rgba(255, 0, 0, 0.48);
+  }
+  
+
+.edit-username, .edit-userid{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+
+    line-height: 12px;
+    margin-top: 10px;
+    color: #A57548;
+}
+
+.edit-username-input, .edit-userid-input{
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+    flex-direction: column;
+    width: 330px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.save-changes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 378px;
+    left: 175px;
+    background-color: #D9D9D9;
+    width: 105px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: black;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 30%);
+    cursor: pointer;
+}
